@@ -6,10 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tristan O’Malley">
-<meta name="dcterms.date" content="2024-02-19">
+<meta name="author" content="박세희">
+<meta name="dcterms.date" content="2024-02-20">
+<meta name="description" content="Distill 패키지를 사용하지 않고 Quarto로 블로그를 시작하게 된 이유">
 
-<title>Mindful Analytics - Welcome To My Blog</title>
+<title>Mindful Analytics - welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +78,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -124,9 +125,16 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Welcome To My Blog</h1>
-                                <div class="quarto-categories">
+      <h1 class="title">welcome</h1>
+                  <div>
+        <div class="description">
+          Distill 패키지를 사용하지 않고 Quarto로 블로그를 시작하게 된 이유
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">news</div>
+                <div class="quarto-category">featured</div>
+                <div class="quarto-category">중급</div>
               </div>
                   </div>
   </div>
@@ -137,14 +145,14 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Tristan O’Malley </p>
+               <p>박세희 </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 19, 2024</p>
+        <p class="date">February 20, 2024</p>
       </div>
     </div>
     
@@ -155,18 +163,140 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#배경" id="toc-배경" class="nav-link active" data-scroll-target="#배경">배경</a></li>
+  <li><a href="#r로-블로그-만드는-3가지-방법" id="toc-r로-블로그-만드는-3가지-방법" class="nav-link" data-scroll-target="#r로-블로그-만드는-3가지-방법">R로 블로그 만드는 3가지 방법</a></li>
+  <li><a href="#quarto-장점" id="toc-quarto-장점" class="nav-link" data-scroll-target="#quarto-장점">Quarto 장점</a></li>
+  <li><a href="#quarto-단점" id="toc-quarto-단점" class="nav-link" data-scroll-target="#quarto-단점">Quarto 단점</a></li>
+  <li><a href="#어떻게-시작하나요" id="toc-어떻게-시작하나요" class="nav-link" data-scroll-target="#어떻게-시작하나요">어떻게 시작하나요?</a>
+  <ul class="collapse">
+  <li><a href="#quarto-blog-프로젝트-만들기" id="toc-quarto-blog-프로젝트-만들기" class="nav-link" data-scroll-target="#quarto-blog-프로젝트-만들기">Quarto Blog 프로젝트 만들기</a></li>
+  <li><a href="#github-연동하기" id="toc-github-연동하기" class="nav-link" data-scroll-target="#github-연동하기">Github 연동하기</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>This is the first post in a Quarto blog. Welcome!</p>
-<p><img src="thumbnail.jpg" class="img-fluid"></p>
-<p>Since this post doesn’t specify an explicit <code>image</code>, the first image in the post will be used in the listing page of posts.</p>
+<div class="{writing}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://allisonhorst.com/horst-hill-collaborations" class="lightbox"><img src="writing.webp" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">Artwork by Allison Horst</figcaption>
+</figure>
+</div>
+</div>
+<section id="배경" class="level2">
+<h2 class="anchored" data-anchor-id="배경">배경</h2>
+<p>제가 논문을 blogdown을 포함하는 bookdown으로 쓰게 된 건, R을 기반으로 한 데이터 분석 결과를 매번 업데이트 하는 과정에서 자잘한 변경을 모두 트래킹 하기 어려웠기 때문입니다. <strong>재현 가능한 연구(reproducible research)</strong> 를 위해서라도 R로 논문을 쓰는 게 필요했고, 당시 블로그를 시작할까 도전하면서 며칠을 낑낑 댔던 기억이 나네요.</p>
+<p>이후 등장한 distill은 블로그에 최적화된 간결한 기능을 사용자 친화적인 함수로 제공하여 훨씬 간편해졌어요. distill은 인용, 각주 등이 잘 구현되어 있다는 점, 그리고 css를 잘 몰라도 기본적인 구성은 아주 쉽게 구현할 수 있다는 강점을 갖고 있습니다.</p>
+<p>Distill의 기능을 대부분 포괄하면서 가장 최근에 나온 Quarto Blog 툴은 자바스크립트(JS) 기반 부트스트랩5을 탑재하고 있어 개인화 작업이 손 쉬워 졌습니다.</p>
+</section>
+<section id="r로-블로그-만드는-3가지-방법" class="level2">
+<h2 class="anchored" data-anchor-id="r로-블로그-만드는-3가지-방법">R로 블로그 만드는 3가지 방법</h2>
+<ul>
+<li><code>blogdown</code> (2017 ~ ): R로 작성하는 html 기초 문법 제공
+<ul>
+<li>bookdown 패키지의 서브 버전으로 기본 문법을 이해하면 다른 패키지나 시스템 이해도가 크게 높아집니다.<br>
+</li>
+<li>온라인 ebook은 무료로 제공 되고 있습니다.<br>
+</li>
+<li>패키지 저자 Yihui Xie의 <a href="https://bookdown.org/yihui/blogdown/">공식 가이드북</a>을 추천합니다.</li>
+</ul></li>
+<li><code>distill</code> (2018 ~ ): 블로그에 최적화된 레이아웃 제공
+<ul>
+<li>과학 블로그, 기술 블로그에 최적화된 웹출판 도구로 패발된 패키지 입니다.<br>
+</li>
+<li>수학식, 인용, 각주 등을 손쉽게 사용할 수 있도록 편의성을 제공합니다.<br>
+</li>
+<li>각종 편의 기능을 제공하는 함수로 블로그 포스팅을 쉽고 빠르게 할 수 있어요.<br>
+</li>
+<li>quarto 블로그 시스템에 distill을 차용하고 있기 때문에 레퍼런스로 활용할 만 합니다.<br>
+</li>
+<li>공식 홈페이지는 <a href="https://rstudio.github.io/distill/">여기</a> 참고하세요.</li>
+</ul></li>
+<li><code>quarto</code> (2022 ~ ): 패키지가 아닌 문서 작성 도구 distill 기능을 대부분 계승합니다.
+<ul>
+<li>Quarto는 Posit에서 공식 개발, 확장 중인 시스템으로 빠르게 기능이 확장 되고 있습니다.<br>
+</li>
+<li>R 생태계를 파이썬과 연결하려는 시스템 입니다.<br>
+</li>
+<li>RStudio 외에 쥬피터노트북, 비쥬얼스튜디오에서도 사용할 수 있어요.</li>
+</ul></li>
+</ul>
+</section>
+<section id="quarto-장점" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-장점">Quarto 장점</h2>
+<ul>
+<li>별도 패키지 설치가 필요 없습니다.<br>
+</li>
+<li>Quarto -&gt; Github -&gt; 제3자 퍼블리싱 연계가 쉽습니다.<br>
+</li>
+<li>R 이외 파이썬 언어로도 작성 가능합니다.</li>
+<li>블로그, 홈페이지, MS워드, PDF, ePub 등 다양한 문서 작성을 지원합니다.</li>
+</ul>
+</section>
+<section id="quarto-단점" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-단점">Quarto 단점</h2>
+<ul>
+<li>개인화 하려면 배워야 할 게 많습니다.
+<ul>
+<li>R마크다운, html, css, JS는 기본적으로 이해할 필요가 있어요.<br>
+</li>
+<li>git에 대한 기본 이해도 필요 해요.</li>
+<li>Netlify 같은 호스팅 서비스도 필요해요.</li>
+</ul></li>
+<li>패키지가 아니라서 클릭 한 번으로 블로그 포스팅 템플릿이 자동 생성되지 않습니.
+<ul>
+<li>블로그 포스팅 마다 폴더를 만들고, 그 안에 Rmd(R마크다운) 파일을 개별 생성해야 합니다.</li>
+</ul></li>
+</ul>
+</section>
+<section id="어떻게-시작하나요" class="level2">
+<h2 class="anchored" data-anchor-id="어떻게-시작하나요">어떻게 시작하나요?</h2>
+<section id="quarto-blog-프로젝트-만들기" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-blog-프로젝트-만들기">Quarto Blog 프로젝트 만들기</h3>
+<p>가장 쉬운 방법은 RStudio에서 신규 프로젝트를 생성할 때, <strong>Quarto Blog</strong>를 선택하는 겁니다. 프로젝트에서 자동으로 기본 뼈대 구성에 필요한 폴더들과 파일을 만들어 줍니다. 일단은 개인화는 나중에 생각하고, 해당 템플릿을 활용해서 <code>index.Rmd</code>를 나의 블로그 포스팅으로 수정하기만 해도 블로그를 시작하는 거죠.</p>
+<p>여기까지 얼마나 걸릴까요? 블로그 포스팅 소재만 준비되어 있다면 하루도 안 걸립니다.</p>
+</section>
+<section id="github-연동하기" class="level3">
+<h3 class="anchored" data-anchor-id="github-연동하기">Github 연동하기</h3>
+<p>git에 대해 잘 모르거나 github를 써 보지 않았다면 처음에 조금 헤맬 수 있어요. 관련된 포스팅은 다음 기회에 자세히 하기로 하구요, 초보를 위한 <code>usethis</code> 패키지를 활용할께요.</p>
+<ul>
+<li><a href="https://github.com">GitHub</a> 계정이 없다면 이번 기회에 만듭니다.<br>
+</li>
+<li><code>usethis</code> 패키지를 설치 하고 불러 옵니다.</li>
+</ul>
+<ul>
+<li>깃헙 내 계정과 RStudio를 연결 합니다.
+<ul>
+<li><a href="https://happygitwithr.com">Happy Git and GibHub for the useR</a>을 참조하시면 왠만한 건 다 해결 될 거에요.<br>
+</li>
+<li>우리가 참고할 부분은 <a href="https://happygitwithr.com/existing-github-last">17 Existing project, Github last</a>입니다.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>✔ Setting active project to
+'/Users/Sehee/Library/CloudStorage/Dropbox/RBlogs/QuartoBlog'</code></pre>
+</div>
+</div>
+<p>위 명령을 실행하면 RStudio 우측 상단 Environment가 있는 패널에 ’Git’이라는 패널이 새로 생길 거에요. <img src="git_panel.webp" class="img-fluid" alt="Git 패널이 생기면 성공"></p>
+<ul>
+<li>작성한 블로그 자료를 모두 깃헙 내 레포지토리에 업로드(push) 합니다.</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
