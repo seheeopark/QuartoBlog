@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* --------------Color Code---------------- */ 
+/* Ref: https://bootswatch.com/darkly/ */ 
+/* theme: bootstrap, flatly & darkly */ 
+/* success: #00bc8c, info: #3498db, warning: #f39c12, danger: #e74c3c */
+/* primary: #375a7f, secondary: #778485 */ 
+
+body {
+  font-family: "Noto Sans KR";
+}
+
+h2, h3, h4, h5, h6 {
+  line-height: 2em; /* increases, so wrapping headers don't overlap */ 
+  font-family: "Noto Sans KR";
+  font-weight: bold; 
+}
+
+h1 {
+  line-height: 2em; /* increases, so wrapping headers don't overlap */ 
+  font-family: "Noto Sans KR";
+  font-weight: 900;
+  font-size: 3em;
+  color: #f39c12;  /* #c27d0e, #f39c12 */ 
+}
+
+blockquote {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  /* color: #083c5d;*/
+  /* background-color: #eeeeee; */
+  border-left: 4px solid #375a7f;
+  padding-top: 10px;
+  line-height: 10px;
+}
+
+/* -------------Navbar----------------- */
+
+
+/* -------------Title------------------ */
+
+
+/* -------------Footer----------------- */
+
+.footer {
+  margin-top: 2em;
+}
+
+.nav-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.nav-footer-center {
+  margin: 0;
+  font-family: "Noto Sans KR";
+}

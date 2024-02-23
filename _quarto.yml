@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Mindful Analytics"
+  description: "사려 깊은 데이터 분석 이야기"
+  google-analytics: "G-714N6G1JWS"
+  search: 
+    location: navbar 
+    type: overlay 
+  favicon: images/favicon.webp 
+  navbar:
+    right:
+      - text: "Blog"
+        file: index.qmd
+      - text: "About"
+        file: about.qmd
+      - icon: github
+        href: https://github.com/seheeopark
+      - icon: linkedin
+        href: https://linkedin/in/seheepark
+    toggle-position: "right"
+    pinned: true 
+  page-footer: 
+    background: primary
+    center: | 
+      © Copyright 2024 [Sehee Park](https://www.linkedin.com/in/seheepark/)  
+      [CC BY-NC 4.0 Creative Commons License](http://creativecommons.org/licenses/by-nc/4.0/)  
+      Made with [Quarto](https://quarto.org/docs/websites/website-blog.html), Deployed with [Netlify](https://www.netlify.com) 
+      
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly 
+    css: styles.css
+    code-copy: true
+
+lightbox: true 
+
+editor: visual
+

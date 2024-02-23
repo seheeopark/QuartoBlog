@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\n2024-02-22\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\n2024-02-19\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Mindful Analytics",
+    "section": "",
+    "text": "R | Python | Docker | JS\n네트워크 분석 | 예측 모델링 | 자연어처리(NLP)\n수석데이터분석가/CTO @ 딜리버디 (2022. 9 ~ 현재)\n겸임교수 @ 한국뉴욕주립대 SBU 기술경영학과 (2023. 1 ~ 현재)\n책임연구원/팀장 @ 한국산업기술진흥원 (2006.2 ~ 2022. 9)\n지혜로움 | 미션지향 | 효율추구 | 맛집탐방"
+  },
+  {
+    "objectID": "about.html#박세희bak-seh-hui-ph.d.",
+    "href": "about.html#박세희bak-seh-hui-ph.d.",
+    "title": "Mindful Analytics",
+    "section": "",
+    "text": "R | Python | Docker | JS\n네트워크 분석 | 예측 모델링 | 자연어처리(NLP)\n수석데이터분석가/CTO @ 딜리버디 (2022. 9 ~ 현재)\n겸임교수 @ 한국뉴욕주립대 SBU 기술경영학과 (2023. 1 ~ 현재)\n책임연구원/팀장 @ 한국산업기술진흥원 (2006.2 ~ 2022. 9)\n지혜로움 | 미션지향 | 효율추구 | 맛집탐방"
+  }
+]
