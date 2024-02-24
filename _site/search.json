@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
     "objectID": "posts/quarto-blog/quarto-blog.html",
     "href": "posts/quarto-blog/quarto-blog.html",
     "title": "R Quarto로 만드는 블로그",
@@ -53,7 +46,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "R Quarto로 만든 블로그 배포\n\n\n\n\n\n\n\nnews\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n \n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\n\nnews\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n \n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\n  \n\n\n\n\nPost With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n \n\n\n\n\n2024-02-22\n\n\nHarlow Malloc\n\n\n1 min\n\n\n\n\n\n\nNo matching items"
+    "text": "R Quarto로 만든 블로그 배포\n\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n \n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n \n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",

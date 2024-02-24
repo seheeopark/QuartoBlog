@@ -6,7 +6,7 @@ date: "2024-02-24"
 date-modified: "2024-02-24" 
 date-format: "iso"
 toc: true 
-categories: [news, featured, git, quarto]
+categories: [featured, git, quarto, netlify]
 freeze: true 
 ---
 

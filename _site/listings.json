@@ -3,8 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/netlify-deployment/netlify-deployment.html",
-      "/posts/quarto-blog/quarto-blog.html",
-      "/posts/post-with-code/index.html"
+      "/posts/quarto-blog/quarto-blog.html"
     ]
   }
 ]
