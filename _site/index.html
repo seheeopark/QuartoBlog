@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-reading-time','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-date","listing-cateogires"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -173,7 +173,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="featured">featured <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="중급">중급 <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="featured">featured <span class="quarto-category-count">(1)</span></div><div class="category" data-category="git">git <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="quarto">quarto <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -185,8 +185,14 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,featured,중급" data-listing-date-sort="1708614000000" data-listing-file-modified-sort="1708698525108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="quarto-post image-right" data-index="0" data-categories="news,featured,git,quarto" data-listing-date-sort="1708614000000" data-listing-file-modified-sort="1708784297125" data-listing-date-modified-sort="1708700400000" data-listing-reading-time-sort="5">
 <div class="thumbnail">
 <p><a href="./posts/quarto-blog/quarto-blog.html"> <p class="card-img-top"><img src="posts/quarto-blog/writing.webp"  class="thumbnail-image card-img"/></p> </a></p>
 </div>
@@ -206,15 +212,14 @@ news
 <div class="listing-category" onclick="window.quartoListingCategory('featured'); return false;">
 featured
 </div>
-<div class="listing-category" onclick="window.quartoListingCategory('중급'); return false;">
-중급
+<div class="listing-category" onclick="window.quartoListingCategory('git'); return false;">
+git
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('quarto'); return false;">
+quarto
 </div>
 </div>
-<a href="./posts/quarto-blog/quarto-blog.html">
-<div class="listing-description">
-<p>깃헙으로 블로그 배포하기 1단계</p>
-</div>
-</a>
+<a href="./posts/quarto-blog/quarto-blog.html"> </a>
 </div>
 <div class="metadata">
 <a href="./posts/quarto-blog/quarto-blog.html">
@@ -223,6 +228,9 @@ featured
 </div>
 <div class="listing-author">
 박세희
+</div>
+<div class="listing-reading-time">
+5 min
 </div>
 </a>
 </div>
@@ -251,11 +259,7 @@ code
 analysis
 </div>
 </div>
-<a href="./posts/post-with-code/index.html">
-<div class="listing-description">
-This is a post with executable code.
-</div>
-</a>
+<a href="./posts/post-with-code/index.html"> </a>
 </div>
 <div class="metadata">
 <a href="./posts/post-with-code/index.html">
@@ -264,6 +268,9 @@ This is a post with executable code.
 </div>
 <div class="listing-author">
 Harlow Malloc
+</div>
+<div class="listing-reading-time">
+1 min
 </div>
 </a>
 </div>

@@ -25,6 +25,11 @@ h1 {
   color: #f39c12;  /* #c27d0e, #f39c12 */ 
 }
 
+h2 {
+  font-family: "Noto Sans KR";
+  color: #375a7f;
+}
+
 blockquote {
   font-family: "Noto Sans KR";
   font-style: normal;
