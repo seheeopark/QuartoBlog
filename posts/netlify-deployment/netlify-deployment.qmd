@@ -8,7 +8,6 @@ date-format: "iso"
 toc: true 
 categories: [news, featured, git, quarto]
 freeze: true 
-draft: true 
 ---
 
 ::: {writing}
