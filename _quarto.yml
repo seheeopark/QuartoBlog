@@ -10,9 +10,9 @@ website:
     type: overlay 
   favicon: images/favicon.webp 
   comments: 
-    hypothesis: true 
-      theme: clean 
-      openSidebar: true 
+    utterances:
+      repo: quarto-dev/quarto-web 
+      theme: gruvbox-dark
   navbar:
     right:
       - text: "Blog"
