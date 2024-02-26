@@ -12,6 +12,7 @@ website:
   comments: 
     hypothesis: true 
       theme: clean 
+      openSidebar: true 
   navbar:
     right:
       - text: "Blog"
