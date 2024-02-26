@@ -9,11 +9,6 @@ website:
     location: navbar 
     type: overlay 
   favicon: images/favicon.webp 
-  comments: 
-    utterances:
-      repo: seheeopark/QuartoBlog
-      theme: gruvbox-dark
-      issue-term: title
   navbar:
     right:
       - text: "Blog"
@@ -40,6 +35,11 @@ format:
       dark: darkly 
     css: styles.css
     code-copy: true
+    comments: 
+      utterances:
+        repo: seheeopark/QuartoBlog
+        theme: gruvbox-dark
+        issue-term: title
 
 lightbox: true 
 
