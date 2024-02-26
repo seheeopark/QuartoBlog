@@ -13,6 +13,7 @@ website:
     utterances:
       repo: quarto-dev/quarto-web 
       theme: gruvbox-dark
+      issue-term: title
   navbar:
     right:
       - text: "Blog"
