@@ -11,7 +11,7 @@ website:
   favicon: images/favicon.webp 
   comments: 
     utterances:
-      repo: quarto-dev/quarto-web 
+      repo: seheeopark/QuartoBlog
       theme: gruvbox-dark
       issue-term: title
   navbar:
