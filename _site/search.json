@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "R Quarto로 만든 블로그 배포\n\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n \n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n  \n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n \n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
+    "text": "R Quarto로 만든 블로그 배포\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -67,7 +67,7 @@
     "href": "posts/quarto-blog/quarto-blog.html#사용-소감",
     "title": "R Quarto로 만드는 블로그",
     "section": "사용 소감",
-    "text": "사용 소감\n글이 너무 길어져서… 웹에 배포하는 Netlify 연동은 다음 포스팅에서 다룰께요.\nQuarto 설치 후 첫 블로그 포스팅 까지 딱 하루가 걸렸어요. 물론 저는 R 사용에 능숙하고 기존에 blogdown, distill 썼던 경험이 있어서 수월 했을 수도 있다고 생각합니다. 그럼에도 Quarto가 워낙 사용하기 쉽기 때문에 개발자가 아니어도 누구나 R을 활용한 블로그를 개설할 수 있습니다. Wordpress 블로그 개설이 너무 어려웠다면, Quarto를 찬찬히 따라해 보는 것 추천합니다. 여러분도 할 수 있어요."
+    "text": "사용 소감\n글이 너무 길어져서… 웹에 배포하는 Netlify 연동은 다음 포스팅에서 다룰께요.\nNetlify 연동방법 글 바로가기\nQuarto 설치 후 첫 블로그 포스팅 까지 딱 하루가 걸렸어요. 물론 저는 R 사용에 능숙하고 기존에 blogdown, distill 썼던 경험이 있어서 수월 했을 수도 있다고 생각합니다. 그럼에도 Quarto가 워낙 사용하기 쉽기 때문에 개발자가 아니어도 누구나 R을 활용한 블로그를 개설할 수 있습니다. Wordpress 블로그 개설이 너무 어려웠다면, Quarto를 찬찬히 따라해 보는 것 추천합니다. 여러분도 할 수 있어요.\n\n\n\nArtwork by Allison Horst\nGit 패널이 생기면 성공\nPAT만드는 깃헙페이지로 연결됩니다\n콘솔에서 옵션을 선택해서 저장"
   },
   {
     "objectID": "posts/netlify-deployment/netlify-deployment.html",
@@ -109,7 +109,7 @@
     "href": "posts/netlify-deployment/netlify-deployment.html#이제-블로그-쓰기만-하세요",
     "title": "R Quarto로 만든 블로그 배포",
     "section": "이제 블로그 쓰기만 하세요",
-    "text": "이제 블로그 쓰기만 하세요\n지금 여러분이 보고 있는 Mindful Analytics 블로그도 바로 Quarto-GitHub-Netlify 조합으로 만들고 배포 하였습니다. 이 연동 설정은 1회만 하면 됩니다. 앞으로는 Quarto로 추가 포스팅 작성 후 GitHub로 커밋 & 푸쉬만 하면 Netlify가 해당 변경 내용을 실시간으로 받아서 웹사이트를 상시 업데이트 해 줍니다. 변경에 대한 배포에 대해 고민할 필요가 없는 것이 Netlify를 쓰는 가장 큰 장점 이에요.\n\n(보너스) 연동 후 새로운 글 배포하는 방법\n\nposts 폴더 안에 새로운 블로그 글을 작성할 폴더를 만듭니다.\n\n작성할 포스트 제목을 나타내는 키워드를 영어로 골라서 폴더명을 쓰세요.\n예를 들어, 제가 작성 중인 이 포스트는 netlify-deployment 폴더 안에 있습니다.\n이 폴더 이름이 블로그 글 주소에 들어가게 됩니다.\n\n새로 만든 폴더 안에 .qmd 파일을 생성하고 블로그 템플릿을 참고하여 새 글을 작성합니다.\n\n추가할 그림이나 데이터는 이 폴더 안에 함께 담아 주면 별도 경로 지정할 필요가 없어요.\n\n글 작성 후 웹 등록하려면 다음 2가지를 꼭 기억하세요.\n\n블로그 .qmd의 yaml 헤더에 draft: false 인지 꼭 확인하세요 (삭제하면 더 좋아요)\n다 작성한 뒤 반드시 Render를 해서 html 파일을 생성합니다. 변경 사항 저장 시 자동 Render 되도록 Render on Save 옵션을 활성화하면 편리합니다.\n_site 폴더 안에 내가 만든 포스팅 폴더가 추가 되었는지 확인하세요\n\n깃헙에 변경된 내용을 커밋 & 푸쉬하는 것 잊지 마세요.\n\n\n여러분도 R로 쓰는 블로그, Quarto-GitHub-Netlify 조합으로 쉽고 빠르게 만들어 나가시길 바랍니다."
+    "text": "이제 블로그 쓰기만 하세요\n지금 여러분이 보고 있는 Mindful Analytics 블로그도 바로 Quarto-GitHub-Netlify 조합으로 만들고 배포 하였습니다. 이 연동 설정은 1회만 하면 됩니다. 앞으로는 Quarto로 추가 포스팅 작성 후 GitHub로 커밋 & 푸쉬만 하면 Netlify가 해당 변경 내용을 실시간으로 받아서 웹사이트를 상시 업데이트 해 줍니다. 변경에 대한 배포에 대해 고민할 필요가 없는 것이 Netlify를 쓰는 가장 큰 장점 이에요.\n\n(보너스) 연동 후 새로운 글 배포하는 방법\n\nposts 폴더 안에 새로운 블로그 글을 작성할 폴더를 만듭니다.\n\n작성할 포스트 제목을 나타내는 키워드를 영어로 골라서 폴더명을 쓰세요.\n예를 들어, 제가 작성 중인 이 포스트는 netlify-deployment 폴더 안에 있습니다.\n이 폴더 이름이 블로그 글 주소에 들어가게 됩니다.\n\n새로 만든 폴더 안에 .qmd 파일을 생성하고 블로그 템플릿을 참고하여 새 글을 작성합니다.\n\n추가할 그림이나 데이터는 이 폴더 안에 함께 담아 주면 별도 경로 지정할 필요가 없어요.\n\n글 작성 후 웹 등록하려면 다음 2가지를 꼭 기억하세요.\n\n블로그 .qmd의 yaml 헤더에 draft: false 인지 꼭 확인하세요 (삭제하면 더 좋아요)\n다 작성한 뒤 반드시 Render를 해서 html 파일을 생성합니다. 변경 사항 저장 시 자동 Render 되도록 Render on Save 옵션을 활성화하면 편리합니다.\n_site 폴더 안에 내가 만든 포스팅 폴더가 추가 되었는지 확인하세요\n\n깃헙에 변경된 내용을 커밋 & 푸쉬하는 것 잊지 마세요.\n\n\n여러분도 R로 쓰는 블로그, Quarto-GitHub-Netlify 조합으로 쉽고 빠르게 만들어 나가시길 바랍니다.\n\n\n\nArtwork by Allison Horst\n등록할 깃헙 레포지토리 설정하는 방법\n사이트명 설정하기\n_site 라고 입력하기"
   },
   {
     "objectID": "posts/netlify-deployment/netlify-deployment.html#footnotes",
