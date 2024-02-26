@@ -1,13 +1,15 @@
 ---
-title: "Blog"
+title: "Featured"
 listing:
   contents: posts
   sort: "date desc"
-  type: default
+  type: grid
+  include: 
+    categories: "featured"
   fields: [title, author, date, image, reading-time, categories] 
-  categories: true
-  sort-ui: true
-  filter-ui: [title, date, cateogires] 
+  categories: false
+  sort-ui: false
+  filter-ui: false
   date-format: "iso"
 page-layout: full 
 toc: true

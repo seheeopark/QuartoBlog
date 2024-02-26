@@ -11,6 +11,8 @@ website:
   favicon: images/favicon.webp 
   navbar:
     right:
+      - text: "Featured"
+        file: featured.qmd
       - text: "Blog"
         file: index.qmd
       - text: "About"
@@ -38,12 +40,15 @@ format:
     comments: 
       utterances:
         repo: seheeopark/QuartoBlog
-        theme: gruvbox-dark
+        theme: github-light
         issue-term: title
-
-lightbox: true 
-
-cookie-consent: true 
+    execute:
+      echo: true
+      output: true
+      warning: false
+    df-print: paged
+    lightbox: true 
+    cookie-consent: true 
 
 editor: visual
 

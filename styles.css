@@ -8,10 +8,10 @@
 
 body {
   font-family: "Noto Sans KR";
-  line-height: 1.5em;
+  line-height: 1.7em;
 }
 
-h2, h3, h4, h5, h6 {
+h3, h4, h5, h6 {
   line-height: 2em; /* increases, so wrapping headers don't overlap */ 
   font-family: "Noto Sans KR";
   font-weight: bold; 
@@ -28,6 +28,7 @@ h1 {
 h2 {
   font-family: "Noto Sans KR";
   color: #375a7f;
+  font-weight: bold; 
 }
 
 blockquote {
@@ -43,8 +44,10 @@ blockquote {
 /* -------------Navbar----------------- */
 
 
-/* -------------Title------------------ */
-
+/* -------------Code Class.output------------------ */
+.bg-gray {
+  background-color: #eeeeee;
+}
 
 /* -------------Footer----------------- */
 
