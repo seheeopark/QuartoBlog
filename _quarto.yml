@@ -9,6 +9,9 @@ website:
     location: navbar 
     type: overlay 
   favicon: images/favicon.webp 
+  comments: 
+    hypothesis: true 
+      theme: clean 
   navbar:
     right:
       - text: "Blog"
