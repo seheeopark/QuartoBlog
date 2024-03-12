@@ -38,7 +38,7 @@ blockquote {
   /* background-color: #eeeeee; */
   border-left: 4px solid #375a7f;
   padding-top: 10px;
-  line-height: 10px;
+  line-height: 1.5em;
 }
 
 /* -------------Navbar----------------- */
@@ -53,6 +53,8 @@ blockquote {
 
 .footer {
   margin-top: 2em;
+  font-size: 12px;
+  line-height: 1.3em;
 }
 
 .nav-footer {

@@ -213,6 +213,12 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
       </div>
     </div>
     
+      <div>
+      <div class="quarto-title-meta-heading">Modified</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">2024-03-12</p>
+      </div>
+    </div>
       
     </div>
     
@@ -232,7 +238,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
   <li><a href="#빅쿼리-계정에-공개-데이터셋-추가하기" id="toc-빅쿼리-계정에-공개-데이터셋-추가하기" class="nav-link" data-scroll-target="#빅쿼리-계정에-공개-데이터셋-추가하기">(3) 빅쿼리 계정에 공개 데이터셋 추가하기</a></li>
   <li><a href="#빅쿼리-데이터-구조" id="toc-빅쿼리-데이터-구조" class="nav-link" data-scroll-target="#빅쿼리-데이터-구조">(4) 빅쿼리 데이터 구조</a></li>
   </ul></li>
-  <li><a href="#birgquery-패키지" id="toc-birgquery-패키지" class="nav-link" data-scroll-target="#birgquery-패키지">birgquery 패키지</a>
+  <li><a href="#bigrquery-패키지" id="toc-bigrquery-패키지" class="nav-link" data-scroll-target="#bigrquery-패키지">bigrquery 패키지</a>
   <ul class="collapse">
   <li><a href="#a-패키지-설치하기" id="toc-a-패키지-설치하기" class="nav-link" data-scroll-target="#a-패키지-설치하기">(a) 패키지 설치하기</a></li>
   <li><a href="#b-계정-인증" id="toc-b-계정-인증" class="nav-link" data-scroll-target="#b-계정-인증">(b) 계정 인증</a></li>
@@ -316,8 +322,8 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <p>빅쿼리 접속할 경우에 이 3가지 정보를 정확히 입력해야 원하는 데이터를 받을 수 있습니다.</p>
 </section>
 </section>
-<section id="birgquery-패키지" class="level2">
-<h2 class="anchored" data-anchor-id="birgquery-패키지">birgquery 패키지</h2>
+<section id="bigrquery-패키지" class="level2">
+<h2 class="anchored" data-anchor-id="bigrquery-패키지">bigrquery 패키지</h2>
 <p><code>bigrquery</code> 패키지는 가벼운 API 연동으로 빅쿼리에 저장된 데이터 정보(메타데이터)를 빠르게 받아올 수 있습니다.</p>
 <section id="a-패키지-설치하기" class="level3">
 <h3 class="anchored" data-anchor-id="a-패키지-설치하기">(a) 패키지 설치하기</h3>
@@ -400,7 +406,9 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <section id="e-주의사항" class="level3">
 <h3 class="anchored" data-anchor-id="e-주의사항">(e) 주의사항</h3>
 <p>메타데이터는 실제 해당 테이블이 가지고 있는 데이터를 포함하지 않고 단순히 어떤 프로젝트, 데이터셋, 테이블 인지를 정의한 정보 입니다. 데이터를 출력하려면 <code>bq_table_download()</code>를 사용합니다. 이 때 서버에 얼마나 많은 양의 데이터가 있는지 알 수 없기 때문에 <strong>모든 데이터를 출력하지 않아야 합니다.</strong> 자칫 실수로 전체 데이터를 받을 경우 과도한 비용과 서버 과부하가 발생합니다.</p>
-<p>따라서 다음과 같이 테이블이 가진 첫 6개 행을 출력해 보는 것을 습관화 하는 것이 좋겠습니다.</p>
+<p>또한 빅쿼리는 데이터를 “열(column)”을 기준으로 저장합니다. 따라서 열을 조회하는 순간 행(row) 갯수와 관계없이 비용이 부과됩니다.</p>
+<p>빅쿼리는 데이터 저장 비용은 매우 저렴하지만, 데이터를 조회(SELECT)하거나 추출할 때 비용이 발생하기 때문에 <code>sql</code> 쿼리 설계를 잘 해야 운영 비용이 적게 발생합니다.</p>
+<p>따라서 다음과 같이 테이블이 가진 첫 6개 행을 출력하는 것은 비용 절감에 도움이 되지 않습니다.</p>
 <p><strong>첫 6개행 출력하기</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>natality_df <span class="ot">&lt;-</span> bigrquery<span class="sc">::</span><span class="fu">bq_table_download</span>(natality, <span class="at">n_max =</span> <span class="dv">6</span>)</span>
@@ -408,9 +416,37 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="reactable html-widget html-fill-item" id="htmlwidget-73fd1011b9343f49779a" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-73fd1011b9343f49779a">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"source_year":[2005,2005,2005,2005,2005,2005],"year":[2005,2005,2005,2005,2005,2005],"month":[1,2,5,8,5,5],"day":["NA","NA","NA","NA","NA","NA"],"wday":[3,7,4,4,6,4],"state":[null,null,null,null,null,null],"is_male":[true,false,false,false,true,false],"child_race":["NA","NA","NA","NA","NA","NA"],"weight_pounds":[7.8043640748,5.37486994756,6.4374980504,6.56095691712,8.81187661214,6.12444163836],"plurality":[1,2,1,1,1,1],"apgar_1min":["NA","NA","NA","NA","NA","NA"],"apgar_5min":["NA",8,7,9,9,"NA"],"mother_residence_state":[null,null,null,null,null,null],"mother_race":[38,1,"NA","NA","NA",7],"mother_age":[30,29,24,26,22,28],"gestation_weeks":[40,38,39,"NA",40,39],"lmp":["04172004","05992004","99999999","99999999","99999999","08112004"],"mother_married":[true,true,true,false,false,true],"mother_birth_state":[null,null,null,null,null,null],"cigarette_use":[null,false,null,null,null,null],"cigarettes_per_day":["NA","NA","NA","NA","NA","NA"],"alcohol_use":[null,false,null,null,null,null],"drinks_per_week":["NA","NA","NA","NA","NA","NA"],"weight_gain_pounds":[99,8,99,25,99,99],"born_alive_alive":[5,9,"NA","NA","NA",0],"born_alive_dead":[2,0,"NA","NA","NA",0],"born_dead":[1,0,"NA","NA","NA",0],"ever_born":[8,10,"NA","NA","NA",1],"father_race":[38,1,"NA","NA","NA",7],"father_age":[24,31,31,99,33,33],"record_weight":[1,1,1,1,1,1]},"columns":[{"id":"source_year","name":"source_year","type":"numeric"},{"id":"year","name":"year","type":"numeric"},{"id":"month","name":"month","type":"numeric"},{"id":"day","name":"day","type":"numeric"},{"id":"wday","name":"wday","type":"numeric"},{"id":"state","name":"state","type":"character"},{"id":"is_male","name":"is_male","type":"logical"},{"id":"child_race","name":"child_race","type":"numeric"},{"id":"weight_pounds","name":"weight_pounds","type":"numeric"},{"id":"plurality","name":"plurality","type":"numeric"},{"id":"apgar_1min","name":"apgar_1min","type":"numeric"},{"id":"apgar_5min","name":"apgar_5min","type":"numeric"},{"id":"mother_residence_state","name":"mother_residence_state","type":"character"},{"id":"mother_race","name":"mother_race","type":"numeric"},{"id":"mother_age","name":"mother_age","type":"numeric"},{"id":"gestation_weeks","name":"gestation_weeks","type":"numeric"},{"id":"lmp","name":"lmp","type":"character"},{"id":"mother_married","name":"mother_married","type":"logical"},{"id":"mother_birth_state","name":"mother_birth_state","type":"character"},{"id":"cigarette_use","name":"cigarette_use","type":"logical"},{"id":"cigarettes_per_day","name":"cigarettes_per_day","type":"numeric"},{"id":"alcohol_use","name":"alcohol_use","type":"logical"},{"id":"drinks_per_week","name":"drinks_per_week","type":"numeric"},{"id":"weight_gain_pounds","name":"weight_gain_pounds","type":"numeric"},{"id":"born_alive_alive","name":"born_alive_alive","type":"numeric"},{"id":"born_alive_dead","name":"born_alive_dead","type":"numeric"},{"id":"born_dead","name":"born_dead","type":"numeric"},{"id":"ever_born","name":"ever_born","type":"numeric"},{"id":"father_race","name":"father_race","type":"numeric"},{"id":"father_age","name":"father_age","type":"numeric"},{"id":"record_weight","name":"record_weight","type":"numeric"}],"resizable":true,"nowrap":true,"dataKey":"f43128bdd846e2adb9e1eb210700dab4"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-81179b1188b33cd73889" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-81179b1188b33cd73889">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"source_year":[2005,2005,2005,2005,2005,2005],"year":[2005,2005,2005,2005,2005,2005],"month":[1,2,5,8,5,5],"day":["NA","NA","NA","NA","NA","NA"],"wday":[3,7,4,4,6,4],"state":[null,null,null,null,null,null],"is_male":[true,false,false,false,true,false],"child_race":["NA","NA","NA","NA","NA","NA"],"weight_pounds":[7.8043640748,5.37486994756,6.4374980504,6.56095691712,8.81187661214,6.12444163836],"plurality":[1,2,1,1,1,1],"apgar_1min":["NA","NA","NA","NA","NA","NA"],"apgar_5min":["NA",8,7,9,9,"NA"],"mother_residence_state":[null,null,null,null,null,null],"mother_race":[38,1,"NA","NA","NA",7],"mother_age":[30,29,24,26,22,28],"gestation_weeks":[40,38,39,"NA",40,39],"lmp":["04172004","05992004","99999999","99999999","99999999","08112004"],"mother_married":[true,true,true,false,false,true],"mother_birth_state":[null,null,null,null,null,null],"cigarette_use":[null,false,null,null,null,null],"cigarettes_per_day":["NA","NA","NA","NA","NA","NA"],"alcohol_use":[null,false,null,null,null,null],"drinks_per_week":["NA","NA","NA","NA","NA","NA"],"weight_gain_pounds":[99,8,99,25,99,99],"born_alive_alive":[5,9,"NA","NA","NA",0],"born_alive_dead":[2,0,"NA","NA","NA",0],"born_dead":[1,0,"NA","NA","NA",0],"ever_born":[8,10,"NA","NA","NA",1],"father_race":[38,1,"NA","NA","NA",7],"father_age":[24,31,31,99,33,33],"record_weight":[1,1,1,1,1,1]},"columns":[{"id":"source_year","name":"source_year","type":"numeric"},{"id":"year","name":"year","type":"numeric"},{"id":"month","name":"month","type":"numeric"},{"id":"day","name":"day","type":"numeric"},{"id":"wday","name":"wday","type":"numeric"},{"id":"state","name":"state","type":"character"},{"id":"is_male","name":"is_male","type":"logical"},{"id":"child_race","name":"child_race","type":"numeric"},{"id":"weight_pounds","name":"weight_pounds","type":"numeric"},{"id":"plurality","name":"plurality","type":"numeric"},{"id":"apgar_1min","name":"apgar_1min","type":"numeric"},{"id":"apgar_5min","name":"apgar_5min","type":"numeric"},{"id":"mother_residence_state","name":"mother_residence_state","type":"character"},{"id":"mother_race","name":"mother_race","type":"numeric"},{"id":"mother_age","name":"mother_age","type":"numeric"},{"id":"gestation_weeks","name":"gestation_weeks","type":"numeric"},{"id":"lmp","name":"lmp","type":"character"},{"id":"mother_married","name":"mother_married","type":"logical"},{"id":"mother_birth_state","name":"mother_birth_state","type":"character"},{"id":"cigarette_use","name":"cigarette_use","type":"logical"},{"id":"cigarettes_per_day","name":"cigarettes_per_day","type":"numeric"},{"id":"alcohol_use","name":"alcohol_use","type":"logical"},{"id":"drinks_per_week","name":"drinks_per_week","type":"numeric"},{"id":"weight_gain_pounds","name":"weight_gain_pounds","type":"numeric"},{"id":"born_alive_alive","name":"born_alive_alive","type":"numeric"},{"id":"born_alive_dead","name":"born_alive_dead","type":"numeric"},{"id":"born_dead","name":"born_dead","type":"numeric"},{"id":"ever_born","name":"ever_born","type":"numeric"},{"id":"father_race","name":"father_race","type":"numeric"},{"id":"father_age","name":"father_age","type":"numeric"},{"id":"record_weight","name":"record_weight","type":"numeric"}],"resizable":true,"nowrap":true,"dataKey":"f43128bdd846e2adb9e1eb210700dab4"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
+</div>
+<p>차라리 출력하는 열 갯수를 줄이는 것이 비용을 많이 절약할 수 있습니다. R에서는 실제 sql 문구를 적용하기 전에는 데이터 양이 얼마나 될 지 미리 알 수가 없습니다. 따라서 빅쿼리 초보 사용자라면 <strong>구글 빅쿼리 콘솔에서 실제로 SQL 구문을 수정해 보면서 데이터 양을 비교</strong>해 보는 것을 추천합니다.</p>
+<ol type="1">
+<li>natality 테이블 모든 열을 조회하는 경우: 데이터 용량 21.94GB</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="natality_all.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="모든 열 1000개 행 조회 시 용량"><img src="natality_all.png" class="img-fluid figure-img" alt="모든 열 1000개 행 조회 시 용량"></a></p>
+<figcaption>모든 열 1000개 행 조회 시 용량</figcaption>
+</figure>
+</div>
+<ol start="2" type="1">
+<li>natality 테이블 중 3개 열에 한정하여 조회하는 경우: 데이터 용량 2.11GB (1/10 정도로 줄었습니다)</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="natality_3columns.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="3개 열 1000개 행 조회 시 용량"><img src="natality_3columns.png" class="img-fluid figure-img" alt="3개 열 1000개 행 조회 시 용량"></a></p>
+<figcaption>3개 열 1000개 행 조회 시 용량</figcaption>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>natality 테이블 중 3개 열의 행 추출 수를 제한하지 않아도(LIMIT 1000 삭제) 데이터 용량은 2.11 GB로 동일합니다.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="natality_3columns_all.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="3개 열 모든 행 조회 시 용량"><img src="natality_3columns_all.png" class="img-fluid figure-img" alt="3개 열 모든 행 조회 시 용량"></a></p>
+<figcaption>3개 열 모든 행 조회 시 용량</figcaption>
+</figure>
 </div>
 <hr>
 <p>오늘은 R에서 빅쿼리 데이터에 접근해서 데이터를 다운로드하는 기초적인 방법을 알아 봤습니다. 다음 글에서는 필요한 열(column) 정보와 행(row) 정보를 선택할 수 있도록 SQL 코드를 R dplyr 패키지와 유사하게 구현할 수 있는 <code>dbplyr</code> 패키지를 활용해서 <strong>효율적인 빅쿼리 데이터 다운로드</strong> 방법에 관해 소개하겠습니다.</p>
@@ -421,6 +457,9 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">빅쿼리 계정 인증 필요</span>
+<span class="glightbox-desc lightbox-desc-2">모든 열 1000개 행 조회 시 용량</span>
+<span class="glightbox-desc lightbox-desc-3">3개 열 1000개 행 조회 시 용량</span>
+<span class="glightbox-desc lightbox-desc-4">3개 열 모든 행 조회 시 용량</span>
 </div>
 </section>
 </section>
@@ -966,8 +1005,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>© Copyright 2024 <a href="https://www.linkedin.com/in/seheepark/">Sehee Park</a><br>
-<a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0 Creative Commons License</a><br>
+<p>© Copyright 2024 <a href="https://seheeopark.rbind.io/about">Sehee Park</a> <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0 Creative Commons License</a><br>
 Made with <a href="https://quarto.org/docs/websites/website-blog.html">Quarto</a>, Deployed with <a href="https://www.netlify.com">Netlify</a></p>
 </div>
     <div class="nav-footer-right">
@@ -975,7 +1013,7 @@ Made with <a href="https://quarto.org/docs/websites/website-blog.html">Quarto</a
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

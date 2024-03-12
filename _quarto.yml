@@ -26,7 +26,7 @@ website:
   page-footer: 
     background: primary
     center: | 
-      © Copyright 2024 [Sehee Park](https://www.linkedin.com/in/seheepark/)  
+      © Copyright 2024 [Sehee Park](https://seheeopark.rbind.io/about)
       [CC BY-NC 4.0 Creative Commons License](http://creativecommons.org/licenses/by-nc/4.0/)  
       Made with [Quarto](https://quarto.org/docs/websites/website-blog.html), Deployed with [Netlify](https://www.netlify.com) 
       
