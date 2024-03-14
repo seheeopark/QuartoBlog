@@ -216,7 +216,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
       <div>
       <div class="quarto-title-meta-heading">Modified</div>
       <div class="quarto-title-meta-contents">
-        <p class="date-modified">2024-03-12</p>
+        <p class="date-modified">2024-03-14</p>
       </div>
     </div>
       
@@ -230,21 +230,10 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
-  <li><a href="#구글-빅쿼리bigquery란" id="toc-구글-빅쿼리bigquery란" class="nav-link active" data-scroll-target="#구글-빅쿼리bigquery란">구글 빅쿼리(BigQuery)란?</a></li>
-  <li><a href="#빅쿼리-시작하기" id="toc-빅쿼리-시작하기" class="nav-link" data-scroll-target="#빅쿼리-시작하기">빅쿼리 시작하기</a>
   <ul class="collapse">
-  <li><a href="#빅쿼리-계정-만들기" id="toc-빅쿼리-계정-만들기" class="nav-link" data-scroll-target="#빅쿼리-계정-만들기">(1) 빅쿼리 계정 만들기</a></li>
-  <li><a href="#빅쿼리-계정에-공개-데이터셋-추가하기" id="toc-빅쿼리-계정에-공개-데이터셋-추가하기" class="nav-link" data-scroll-target="#빅쿼리-계정에-공개-데이터셋-추가하기">(3) 빅쿼리 계정에 공개 데이터셋 추가하기</a></li>
-  <li><a href="#빅쿼리-데이터-구조" id="toc-빅쿼리-데이터-구조" class="nav-link" data-scroll-target="#빅쿼리-데이터-구조">(4) 빅쿼리 데이터 구조</a></li>
-  </ul></li>
-  <li><a href="#bigrquery-패키지" id="toc-bigrquery-패키지" class="nav-link" data-scroll-target="#bigrquery-패키지">bigrquery 패키지</a>
-  <ul class="collapse">
-  <li><a href="#a-패키지-설치하기" id="toc-a-패키지-설치하기" class="nav-link" data-scroll-target="#a-패키지-설치하기">(a) 패키지 설치하기</a></li>
-  <li><a href="#b-계정-인증" id="toc-b-계정-인증" class="nav-link" data-scroll-target="#b-계정-인증">(b) 계정 인증</a></li>
-  <li><a href="#c-공개-데이터셋-정보-확인" id="toc-c-공개-데이터셋-정보-확인" class="nav-link" data-scroll-target="#c-공개-데이터셋-정보-확인">(c) 공개 데이터셋 정보 확인</a></li>
-  <li><a href="#e-주의사항" id="toc-e-주의사항" class="nav-link" data-scroll-target="#e-주의사항">(e) 주의사항</a></li>
-  </ul></li>
+  <li><a href="#구글-빅쿼리bigquery란" id="toc-구글-빅쿼리bigquery란" class="nav-link active" data-scroll-target="#구글-빅쿼리bigquery란">1. 구글 빅쿼리(BigQuery)란?</a></li>
+  <li><a href="#빅쿼리-시작하기" id="toc-빅쿼리-시작하기" class="nav-link" data-scroll-target="#빅쿼리-시작하기">2. 빅쿼리 시작하기</a></li>
+  <li><a href="#bigrquery-패키지-활용법" id="toc-bigrquery-패키지-활용법" class="nav-link" data-scroll-target="#bigrquery-패키지-활용법">3. bigrquery 패키지 활용법</a></li>
   </ul>
 </nav>
     </div>
@@ -255,7 +244,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 
 
 
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="언제 읽으면 좋을까?">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -276,19 +265,19 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 </div>
 </div>
 <section id="구글-빅쿼리bigquery란" class="level2">
-<h2 class="anchored" data-anchor-id="구글-빅쿼리bigquery란">구글 빅쿼리(BigQuery)란?</h2>
+<h2 class="anchored" data-anchor-id="구글-빅쿼리bigquery란">1. 구글 빅쿼리(BigQuery)란?</h2>
 <p>구글 빅쿼리는 대용량 데이터를 효율적으로 처리하고 분석할 수 있도록 구글에서 제공하는 온라인 데이터베이스 서비스 입니다. 특히 온라인 고객 행동을 모니터링하기 위해 사용하는 <strong>GA4(구글애널리틱스4) 데이터를 빅쿼리로 바로 연동</strong>하도록 설계되어 있습니다. 이 때문에 GA4 데이터 분석에서는 빅쿼리 사용 점점 늘어나고 있기도 합니다.</p>
 <p>빅쿼리는 많은 양의 데이터를 온라인에서 분석할 수 있도록 쥬피터노트북과 연계되어 있기 때문에 <strong>데이터를 다운로드 하는 것 보다는 온라인에서 직접 분석하는 게 더 효율적일 수 있습니다.</strong> 그럼에도 불구하고 데이터를 다운로드 받아서 로컬에서 분석해야 하는 경우, <code>bigrquery</code> 패키지를 활용하여 데이터를 다운로드 할 수도 있습니다.</p>
 </section>
 <section id="빅쿼리-시작하기" class="level2">
-<h2 class="anchored" data-anchor-id="빅쿼리-시작하기">빅쿼리 시작하기</h2>
-<div class="callout callout-style-default callout-warning callout-titled">
+<h2 class="anchored" data-anchor-id="빅쿼리-시작하기">2. 빅쿼리 시작하기</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="빅쿼리 설정 먼저">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-빅쿼리 먼저
+빅쿼리 설정 먼저
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -303,7 +292,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <p>빅쿼리 계정을 만들면 <code>콘솔</code>(대시보드)가 생성됩니다.</p>
 </section>
 <section id="빅쿼리-계정에-공개-데이터셋-추가하기" class="level3">
-<h3 class="anchored" data-anchor-id="빅쿼리-계정에-공개-데이터셋-추가하기">(3) 빅쿼리 계정에 공개 데이터셋 추가하기</h3>
+<h3 class="anchored" data-anchor-id="빅쿼리-계정에-공개-데이터셋-추가하기">(2) 빅쿼리 계정에 공개 데이터셋 추가하기</h3>
 <p><code>bigrquery</code> 설치 후 예제를 수행하기 위해서는 본인의 구글 계정에 테스트용 공개 데이터셋를 먼저 추가해야 합니다. 추가하는 방법은 다음과 같습니다.</p>
 <ul>
 <li>빅쿼리 콘솔 &gt; 탐색기(Explorer) &gt; <code>+추가</code> 버튼 클릭<br>
@@ -317,23 +306,23 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Nu-9Myq1UCE" title="빅쿼리 공개데이터 추가" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="빅쿼리-데이터-구조" class="level3">
-<h3 class="anchored" data-anchor-id="빅쿼리-데이터-구조">(4) 빅쿼리 데이터 구조</h3>
+<h3 class="anchored" data-anchor-id="빅쿼리-데이터-구조">(3) 빅쿼리 데이터 구조</h3>
 <p>빅쿼리는 <strong>프로젝트 &gt; 데이터셋 &gt; 테이블</strong> 3단 구조로 설계되어 있습니다. 분석용 데이터는 <code>테이블</code>에 저장되어 있습니다. 우리에게 친숙한 엑셀과 비교하자면, 데이터셋은 파일, 테이블은 시트와 유사한 구조입니다.</p>
 <p>빅쿼리 접속할 경우에 이 3가지 정보를 정확히 입력해야 원하는 데이터를 받을 수 있습니다.</p>
 </section>
 </section>
-<section id="bigrquery-패키지" class="level2">
-<h2 class="anchored" data-anchor-id="bigrquery-패키지">bigrquery 패키지</h2>
+<section id="bigrquery-패키지-활용법" class="level2">
+<h2 class="anchored" data-anchor-id="bigrquery-패키지-활용법">3. bigrquery 패키지 활용법</h2>
 <p><code>bigrquery</code> 패키지는 가벼운 API 연동으로 빅쿼리에 저장된 데이터 정보(메타데이터)를 빠르게 받아올 수 있습니다.</p>
-<section id="a-패키지-설치하기" class="level3">
-<h3 class="anchored" data-anchor-id="a-패키지-설치하기">(a) 패키지 설치하기</h3>
+<section id="패키지-설치하기" class="level3">
+<h3 class="anchored" data-anchor-id="패키지-설치하기">(1) 패키지 설치하기</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"bigrquery"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bigrquery)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="b-계정-인증" class="level3">
-<h3 class="anchored" data-anchor-id="b-계정-인증">(b) 계정 인증</h3>
+<section id="계정-인증" class="level3">
+<h3 class="anchored" data-anchor-id="계정-인증">(2) 계정 인증</h3>
 <p>다음 명령을 실행하면 웹 브라우저가 열리면서 구글 계정에 로그인하도록 안내가 됩니다. 계정 연결은 최초 1회만 필요합니다.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>bigrquery<span class="sc">::</span><span class="fu">bq_auth</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -345,8 +334,8 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 </figure>
 </div>
 </section>
-<section id="c-공개-데이터셋-정보-확인" class="level3">
-<h3 class="anchored" data-anchor-id="c-공개-데이터셋-정보-확인">(c) 공개 데이터셋 정보 확인</h3>
+<section id="공개-데이터셋-정보-확인" class="level3">
+<h3 class="anchored" data-anchor-id="공개-데이터셋-정보-확인">(3) 공개 데이터셋 정보 확인</h3>
 <p>공개 데이터셋 정보는 다음과 같습니다.</p>
 <ul>
 <li>프로젝트: “bigquery-public-data”<br>
@@ -391,8 +380,9 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 &lt;bq_table&gt; bigquery-public-data.samples.wikipedia</code></pre>
 </div>
 </div>
-<section id="d-분석-데이터-선택" class="level4">
-<h4 class="anchored" data-anchor-id="d-분석-데이터-선택">(d) 분석 데이터 선택</h4>
+</section>
+<section id="분석-데이터-선택" class="level3">
+<h3 class="anchored" data-anchor-id="분석-데이터-선택">(4) 분석 데이터 선택</h3>
 <p>7개 테이블 중 <code>natality</code> 테이블을 선택합니다. <code>bq_table(프로젝트, 데이터셋, 테이블)</code> 명령을 실행하면 해당 테이블에 대한 메타 정보를 출력합니다.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>natality <span class="ot">&lt;-</span> bigrquery<span class="sc">::</span><span class="fu">bq_table</span>(<span class="st">"bigquery-public-data"</span>, <span class="st">"samples"</span>, <span class="st">"natality"</span>)</span>
@@ -402,9 +392,8 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 </div>
 </div>
 </section>
-</section>
-<section id="e-주의사항" class="level3">
-<h3 class="anchored" data-anchor-id="e-주의사항">(e) 주의사항</h3>
+<section id="빅쿼리-비용-주의사항" class="level3">
+<h3 class="anchored" data-anchor-id="빅쿼리-비용-주의사항">(5) 빅쿼리 비용 주의사항</h3>
 <p>메타데이터는 실제 해당 테이블이 가지고 있는 데이터를 포함하지 않고 단순히 어떤 프로젝트, 데이터셋, 테이블 인지를 정의한 정보 입니다. 데이터를 출력하려면 <code>bq_table_download()</code>를 사용합니다. 이 때 서버에 얼마나 많은 양의 데이터가 있는지 알 수 없기 때문에 <strong>모든 데이터를 출력하지 않아야 합니다.</strong> 자칫 실수로 전체 데이터를 받을 경우 과도한 비용과 서버 과부하가 발생합니다.</p>
 <p>또한 빅쿼리는 데이터를 “열(column)”을 기준으로 저장합니다. 따라서 열을 조회하는 순간 행(row) 갯수와 관계없이 비용이 부과됩니다.</p>
 <p>빅쿼리는 데이터 저장 비용은 매우 저렴하지만, 데이터를 조회(SELECT)하거나 추출할 때 비용이 발생하기 때문에 <code>sql</code> 쿼리 설계를 잘 해야 운영 비용이 적게 발생합니다.</p>
@@ -416,8 +405,8 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="reactable html-widget html-fill-item" id="htmlwidget-81179b1188b33cd73889" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-81179b1188b33cd73889">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"source_year":[2005,2005,2005,2005,2005,2005],"year":[2005,2005,2005,2005,2005,2005],"month":[1,2,5,8,5,5],"day":["NA","NA","NA","NA","NA","NA"],"wday":[3,7,4,4,6,4],"state":[null,null,null,null,null,null],"is_male":[true,false,false,false,true,false],"child_race":["NA","NA","NA","NA","NA","NA"],"weight_pounds":[7.8043640748,5.37486994756,6.4374980504,6.56095691712,8.81187661214,6.12444163836],"plurality":[1,2,1,1,1,1],"apgar_1min":["NA","NA","NA","NA","NA","NA"],"apgar_5min":["NA",8,7,9,9,"NA"],"mother_residence_state":[null,null,null,null,null,null],"mother_race":[38,1,"NA","NA","NA",7],"mother_age":[30,29,24,26,22,28],"gestation_weeks":[40,38,39,"NA",40,39],"lmp":["04172004","05992004","99999999","99999999","99999999","08112004"],"mother_married":[true,true,true,false,false,true],"mother_birth_state":[null,null,null,null,null,null],"cigarette_use":[null,false,null,null,null,null],"cigarettes_per_day":["NA","NA","NA","NA","NA","NA"],"alcohol_use":[null,false,null,null,null,null],"drinks_per_week":["NA","NA","NA","NA","NA","NA"],"weight_gain_pounds":[99,8,99,25,99,99],"born_alive_alive":[5,9,"NA","NA","NA",0],"born_alive_dead":[2,0,"NA","NA","NA",0],"born_dead":[1,0,"NA","NA","NA",0],"ever_born":[8,10,"NA","NA","NA",1],"father_race":[38,1,"NA","NA","NA",7],"father_age":[24,31,31,99,33,33],"record_weight":[1,1,1,1,1,1]},"columns":[{"id":"source_year","name":"source_year","type":"numeric"},{"id":"year","name":"year","type":"numeric"},{"id":"month","name":"month","type":"numeric"},{"id":"day","name":"day","type":"numeric"},{"id":"wday","name":"wday","type":"numeric"},{"id":"state","name":"state","type":"character"},{"id":"is_male","name":"is_male","type":"logical"},{"id":"child_race","name":"child_race","type":"numeric"},{"id":"weight_pounds","name":"weight_pounds","type":"numeric"},{"id":"plurality","name":"plurality","type":"numeric"},{"id":"apgar_1min","name":"apgar_1min","type":"numeric"},{"id":"apgar_5min","name":"apgar_5min","type":"numeric"},{"id":"mother_residence_state","name":"mother_residence_state","type":"character"},{"id":"mother_race","name":"mother_race","type":"numeric"},{"id":"mother_age","name":"mother_age","type":"numeric"},{"id":"gestation_weeks","name":"gestation_weeks","type":"numeric"},{"id":"lmp","name":"lmp","type":"character"},{"id":"mother_married","name":"mother_married","type":"logical"},{"id":"mother_birth_state","name":"mother_birth_state","type":"character"},{"id":"cigarette_use","name":"cigarette_use","type":"logical"},{"id":"cigarettes_per_day","name":"cigarettes_per_day","type":"numeric"},{"id":"alcohol_use","name":"alcohol_use","type":"logical"},{"id":"drinks_per_week","name":"drinks_per_week","type":"numeric"},{"id":"weight_gain_pounds","name":"weight_gain_pounds","type":"numeric"},{"id":"born_alive_alive","name":"born_alive_alive","type":"numeric"},{"id":"born_alive_dead","name":"born_alive_dead","type":"numeric"},{"id":"born_dead","name":"born_dead","type":"numeric"},{"id":"ever_born","name":"ever_born","type":"numeric"},{"id":"father_race","name":"father_race","type":"numeric"},{"id":"father_age","name":"father_age","type":"numeric"},{"id":"record_weight","name":"record_weight","type":"numeric"}],"resizable":true,"nowrap":true,"dataKey":"f43128bdd846e2adb9e1eb210700dab4"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-b10e0d213aa4c7b9d8ea" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b10e0d213aa4c7b9d8ea">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"source_year":[2005,2005,2005,2005,2005,2005],"year":[2005,2005,2005,2005,2005,2005],"month":[1,2,5,8,5,5],"day":["NA","NA","NA","NA","NA","NA"],"wday":[3,7,4,4,6,4],"state":[null,null,null,null,null,null],"is_male":[true,false,false,false,true,false],"child_race":["NA","NA","NA","NA","NA","NA"],"weight_pounds":[7.8043640748,5.37486994756,6.4374980504,6.56095691712,8.81187661214,6.12444163836],"plurality":[1,2,1,1,1,1],"apgar_1min":["NA","NA","NA","NA","NA","NA"],"apgar_5min":["NA",8,7,9,9,"NA"],"mother_residence_state":[null,null,null,null,null,null],"mother_race":[38,1,"NA","NA","NA",7],"mother_age":[30,29,24,26,22,28],"gestation_weeks":[40,38,39,"NA",40,39],"lmp":["04172004","05992004","99999999","99999999","99999999","08112004"],"mother_married":[true,true,true,false,false,true],"mother_birth_state":[null,null,null,null,null,null],"cigarette_use":[null,false,null,null,null,null],"cigarettes_per_day":["NA","NA","NA","NA","NA","NA"],"alcohol_use":[null,false,null,null,null,null],"drinks_per_week":["NA","NA","NA","NA","NA","NA"],"weight_gain_pounds":[99,8,99,25,99,99],"born_alive_alive":[5,9,"NA","NA","NA",0],"born_alive_dead":[2,0,"NA","NA","NA",0],"born_dead":[1,0,"NA","NA","NA",0],"ever_born":[8,10,"NA","NA","NA",1],"father_race":[38,1,"NA","NA","NA",7],"father_age":[24,31,31,99,33,33],"record_weight":[1,1,1,1,1,1]},"columns":[{"id":"source_year","name":"source_year","type":"numeric"},{"id":"year","name":"year","type":"numeric"},{"id":"month","name":"month","type":"numeric"},{"id":"day","name":"day","type":"numeric"},{"id":"wday","name":"wday","type":"numeric"},{"id":"state","name":"state","type":"character"},{"id":"is_male","name":"is_male","type":"logical"},{"id":"child_race","name":"child_race","type":"numeric"},{"id":"weight_pounds","name":"weight_pounds","type":"numeric"},{"id":"plurality","name":"plurality","type":"numeric"},{"id":"apgar_1min","name":"apgar_1min","type":"numeric"},{"id":"apgar_5min","name":"apgar_5min","type":"numeric"},{"id":"mother_residence_state","name":"mother_residence_state","type":"character"},{"id":"mother_race","name":"mother_race","type":"numeric"},{"id":"mother_age","name":"mother_age","type":"numeric"},{"id":"gestation_weeks","name":"gestation_weeks","type":"numeric"},{"id":"lmp","name":"lmp","type":"character"},{"id":"mother_married","name":"mother_married","type":"logical"},{"id":"mother_birth_state","name":"mother_birth_state","type":"character"},{"id":"cigarette_use","name":"cigarette_use","type":"logical"},{"id":"cigarettes_per_day","name":"cigarettes_per_day","type":"numeric"},{"id":"alcohol_use","name":"alcohol_use","type":"logical"},{"id":"drinks_per_week","name":"drinks_per_week","type":"numeric"},{"id":"weight_gain_pounds","name":"weight_gain_pounds","type":"numeric"},{"id":"born_alive_alive","name":"born_alive_alive","type":"numeric"},{"id":"born_alive_dead","name":"born_alive_dead","type":"numeric"},{"id":"born_dead","name":"born_dead","type":"numeric"},{"id":"ever_born","name":"ever_born","type":"numeric"},{"id":"father_race","name":"father_race","type":"numeric"},{"id":"father_age","name":"father_age","type":"numeric"},{"id":"record_weight","name":"record_weight","type":"numeric"}],"resizable":true,"nowrap":true,"dataKey":"f43128bdd846e2adb9e1eb210700dab4"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>차라리 출력하는 열 갯수를 줄이는 것이 비용을 많이 절약할 수 있습니다. R에서는 실제 sql 문구를 적용하기 전에는 데이터 양이 얼마나 될 지 미리 알 수가 없습니다. 따라서 빅쿼리 초보 사용자라면 <strong>구글 빅쿼리 콘솔에서 실제로 SQL 구문을 수정해 보면서 데이터 양을 비교</strong>해 보는 것을 추천합니다.</p>
@@ -1013,7 +1002,7 @@ Made with <a href="https://quarto.org/docs/websites/website-blog.html">Quarto</a
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom","loop":false});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","loop":false,"closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -6,3 +6,13 @@ freeze: true
 
 # Enable banner style title blocks
 title-block-banner: true
+
+# author 
+author: "박세희"
+
+# date format
+date-format: "iso"
+
+# table of contents 
+toc: true 
+toc-depth: 2
