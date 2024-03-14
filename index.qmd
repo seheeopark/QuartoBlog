@@ -13,4 +13,5 @@ listing:
 page-layout: full 
 toc: true
 title-block-banner: true
+comments: false 
 ---
