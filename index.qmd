@@ -2,7 +2,7 @@
 title: "Blog"
 listing:
   contents: posts
-  feed: true 
+  feed: true
   sort: "date desc"
   type: default
   fields: [title, author, date, image, reading-time, categories] 
