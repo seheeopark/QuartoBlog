@@ -2,21 +2,21 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html",
-      "/posts/bigquery-dbplyr/bigquery-dbplyr.html",
-      "/posts/bigquery-r/bigquery-r.html",
-      "/posts/netlify-deployment/netlify-deployment.html",
-      "/posts/quarto-blog/quarto-blog.html"
+      "/posts/quarto-blog-seo-setting/index.html",
+      "/posts/bigquery-dbplyr/index.html",
+      "/posts/bigquery-r/index.html",
+      "/posts/netlify-deployment/index.html",
+      "/posts/quarto-blog/index.html"
     ]
   },
   {
     "listing": "/featured.html",
     "items": [
-      "/posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html",
-      "/posts/bigquery-dbplyr/bigquery-dbplyr.html",
-      "/posts/bigquery-r/bigquery-r.html",
-      "/posts/netlify-deployment/netlify-deployment.html",
-      "/posts/quarto-blog/quarto-blog.html"
+      "/posts/quarto-blog-seo-setting/index.html",
+      "/posts/bigquery-dbplyr/index.html",
+      "/posts/bigquery-r/index.html",
+      "/posts/netlify-deployment/index.html",
+      "/posts/quarto-blog/index.html"
     ]
   }
 ]

@@ -1,7 +1,7 @@
 ---
 title: "Quarto 블로그 SEO 최적화 3가지 꿀팁"
 description: "Quarto로 만드는 블로그 구글 검색 상위 노출을 위한 SEO 최적화를 위해 서치콘솔 등록, 사이트맵 제출, 메타설명 추가 방법을 다룹니다."
-date: today
+date: "2024-03-14"
 categories: [featured, Quarto, R, SEO]
 image: seo-thumbnail.webp
 ---
