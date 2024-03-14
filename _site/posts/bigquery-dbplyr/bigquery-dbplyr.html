@@ -218,9 +218,22 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
+  <ul>
+  <li><a href="#dbplyr-소개" id="toc-dbplyr-소개" class="nav-link active" data-scroll-target="#dbplyr-소개">1. dbplyr 소개</a>
   <ul class="collapse">
-  <li><a href="#dbplyr-소개" id="toc-dbplyr-소개" class="nav-link active" data-scroll-target="#dbplyr-소개">1. dbplyr 소개</a></li>
-  <li><a href="#dbplyr로-bigquery-데이터-추출하기" id="toc-dbplyr로-bigquery-데이터-추출하기" class="nav-link" data-scroll-target="#dbplyr로-bigquery-데이터-추출하기">2. dbplyr로 bigquery 데이터 추출하기</a></li>
+  <li><a href="#사용-패키지-설치" id="toc-사용-패키지-설치" class="nav-link" data-scroll-target="#사용-패키지-설치">(1) 사용 패키지 설치</a></li>
+  <li><a href="#빅쿼리-계정-연결하기" id="toc-빅쿼리-계정-연결하기" class="nav-link" data-scroll-target="#빅쿼리-계정-연결하기">(2) 빅쿼리 계정 연결하기</a></li>
+  <li><a href="#데이터베이스-연결하기" id="toc-데이터베이스-연결하기" class="nav-link" data-scroll-target="#데이터베이스-연결하기">(3) 데이터베이스 연결하기</a></li>
+  <li><a href="#테이블-불러오기" id="toc-테이블-불러오기" class="nav-link" data-scroll-target="#테이블-불러오기">(4) 테이블 불러오기</a></li>
+  </ul></li>
+  <li><a href="#dbplyr로-bigquery-데이터-추출하기" id="toc-dbplyr로-bigquery-데이터-추출하기" class="nav-link" data-scroll-target="#dbplyr로-bigquery-데이터-추출하기">2. dbplyr로 bigquery 데이터 추출하기</a>
+  <ul class="collapse">
+  <li><a href="#dplyr-문법으로-테이블-요약하기" id="toc-dplyr-문법으로-테이블-요약하기" class="nav-link" data-scroll-target="#dplyr-문법으로-테이블-요약하기">(1) dplyr 문법으로 테이블 요약하기</a></li>
+  <li><a href="#dplyr-문법으로-테이블-조작-쿼리-작성하기" id="toc-dplyr-문법으로-테이블-조작-쿼리-작성하기" class="nav-link" data-scroll-target="#dplyr-문법으로-테이블-조작-쿼리-작성하기">(2) dplyr 문법으로 테이블 조작 쿼리 작성하기</a></li>
+  <li><a href="#데이터-추출하기" id="toc-데이터-추출하기" class="nav-link" data-scroll-target="#데이터-추출하기">(3) 데이터 추출하기</a></li>
+  <li><a href="#데이터-확인하기" id="toc-데이터-확인하기" class="nav-link" data-scroll-target="#데이터-확인하기">(4) 데이터 확인하기</a></li>
+  <li><a href="#데이터베이스-연결-끊기" id="toc-데이터베이스-연결-끊기" class="nav-link" data-scroll-target="#데이터베이스-연결-끊기">(5) 데이터베이스 연결 끊기</a></li>
+  </ul></li>
   <li><a href="#마무리" id="toc-마무리" class="nav-link" data-scroll-target="#마무리">3. 마무리</a></li>
   </ul>
 </nav>
@@ -980,7 +993,7 @@ Made with <a href="https://quarto.org/docs/websites/website-blog.html">Quarto</a
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","openEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -15,4 +15,4 @@ date-format: "iso"
 
 # table of contents 
 toc: true 
-toc-depth: 2
+toc-depth: 3
