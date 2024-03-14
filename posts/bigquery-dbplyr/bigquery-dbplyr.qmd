@@ -4,7 +4,6 @@ description: "SQL을 사용하지 않고도 bigquery 데이터를 추출하는 �
 date: "`r Sys.Date()`"
 categories: [featured, bigquery, R, dbplyr, SQL]
 image: dbplyr_thumbnail.png
-draft: true
 ---
 
 ::: {.callout-tip title="누가, 언제 읽으면 좋을까?"}

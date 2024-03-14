@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/bigquery-dbplyr/bigquery-dbplyr.html",
       "/posts/bigquery-r/bigquery-r.html",
       "/posts/netlify-deployment/netlify-deployment.html",
       "/posts/quarto-blog/quarto-blog.html"
@@ -10,6 +11,7 @@
   {
     "listing": "/featured.html",
     "items": [
+      "/posts/bigquery-dbplyr/bigquery-dbplyr.html",
       "/posts/bigquery-r/bigquery-r.html",
       "/posts/netlify-deployment/netlify-deployment.html",
       "/posts/quarto-blog/quarto-blog.html"
