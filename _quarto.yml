@@ -23,6 +23,8 @@ website:
         href: https://github.com/seheeopark
       - icon: linkedin
         href: https://linkedin/in/seheepark
+      - icon: rss 
+        href: index.xml
     toggle-position: "right"
     pinned: true 
   page-footer: 
