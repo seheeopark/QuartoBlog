@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nSQL\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nSQL\n\n\nR\n\n\n\n\n\n\n2024-02-26\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nQuarto 블로그 SEO 최적화 3가지 꿀팁\n\n\n\n\n\n\nfeatured\n\n\nQuarto\n\n\nR\n\n\nSEO\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nSQL\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nSQL\n\n\nR\n\n\n\n\n\n\n2024-02-26\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -123,7 +123,7 @@
     "href": "featured.html",
     "title": "Featured",
     "section": "",
-    "text": "dbplyr로 bigquery 데이터 추출하기\n\n\n4 min\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nSQL\n\n\n\n\n박세희\n\n\n2024-03-14\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n4 min\n\n\n\nfeatured\n\n\nbigquery\n\n\nSQL\n\n\nR\n\n\n\n\n박세희\n\n\n2024-02-26\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n4 min\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n박세희\n\n\n2024-02-24\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n5 min\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n\n\n박세희\n\n\n2024-02-23\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto 블로그 SEO 최적화 3가지 꿀팁\n\n\n2 min\n\n\n\nfeatured\n\n\nQuarto\n\n\nR\n\n\nSEO\n\n\n\n\n박세희\n\n\n2024-03-14\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n4 min\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nSQL\n\n\n\n\n박세희\n\n\n2024-03-14\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n4 min\n\n\n\nfeatured\n\n\nbigquery\n\n\nSQL\n\n\nR\n\n\n\n\n박세희\n\n\n2024-02-26\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n4 min\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n박세희\n\n\n2024-02-24\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n5 min\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\n\n\n박세희\n\n\n2024-02-23\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/bigquery-r/bigquery-r.html",
@@ -201,5 +201,33 @@
     "title": "dbplyr로 bigquery 데이터 추출하기",
     "section": "3. 마무리",
     "text": "3. 마무리\n이렇게 데이터베이스에 대한 지식이 부족한 R 사용자에게 유용한 패키지 dbplyr를 소개해 드렸습니다. dbplyr 패키지를 사용하여 SQL을 사용하지 않고도 빅쿼리 데이터를 추출할 수 있습니다. 빅쿼리에 저장된 데이터가 너무 많아서 간단하게 데이터 형태를 살펴보고 요약해 보고 싶다면 전체 데이터를 다운로드하지 않아도 되기 때문에 시간과 비용이 크게 절감되니 꼭 활용해 보시기 바랍니다.\n\n\n\n빅쿼리 공개데이터 테이블셋 리스트\ncollect() 함수 실행 시 다운로드하는 데이터 크기"
+  },
+  {
+    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html",
+    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html",
+    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
+    "section": "",
+    "text": "구글 검색 시스템에서 내가 작성한 블로그 글이 누락되지 않도록 하려면 구글 서치 콘솔에 홈페이지를 등록해야 합니다.\n구글 서치 콘솔에 접속 합니다.\n속성 추가 버튼을 눌러서 내 홈페이지를 등록 합니다. 도메인을 구매하여 DNS 정보가 있다면 도메인(신규) 옵션을 선택합니다. 이 블로그 처럼 Netlify, rbind.io 등 직접 구매하지 않은 도메인으로 DNS 관리 정보가 없는 경우는 URL 접두어옵션에서 홈페이지 주소를 입력 합니다.\n\n\n\n구글 서치콘솔에서 홈페이지 등록하기"
+  },
+  {
+    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#서치콘솔에-홈페이지-등록",
+    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#서치콘솔에-홈페이지-등록",
+    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
+    "section": "",
+    "text": "구글 검색 시스템에서 내가 작성한 블로그 글이 누락되지 않도록 하려면 구글 서치 콘솔에 홈페이지를 등록해야 합니다.\n구글 서치 콘솔에 접속 합니다.\n속성 추가 버튼을 눌러서 내 홈페이지를 등록 합니다. 도메인을 구매하여 DNS 정보가 있다면 도메인(신규) 옵션을 선택합니다. 이 블로그 처럼 Netlify, rbind.io 등 직접 구매하지 않은 도메인으로 DNS 관리 정보가 없는 경우는 URL 접두어옵션에서 홈페이지 주소를 입력 합니다.\n\n\n\n구글 서치콘솔에서 홈페이지 등록하기"
+  },
+  {
+    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#사이트맵-제출",
+    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#사이트맵-제출",
+    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
+    "section": "2. 사이트맵 제출",
+    "text": "2. 사이트맵 제출\n\n(1) 사이트맵 생성하기\nQuarto 블로그는 자동으로 사이트맵을 생성해주지 않기 때문에, yaml에 사이트맵을 추가하는 옵션을 넣어 주어야 합니다.\n수정해야 하는 파일은 _quarto.yml입니다.\n이 블로그 사이트를 예시로 설명 드리겠습니다. 아래에는 이 블로그를 만들기 위한 _quarto.yml 파일 중 일부를 발췌해서 보여 드리고 있습니다.\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"Mindful Analytics\"\n---\n_quarto.yml 파일에 다음과 같이 2줄을 추가해서 sitemap을 만들 수 있습니다.\n\nwebsite 옵션 아래 site-url: “내 웹사이트 주소”를 추가합니다.\nsite-path: “/”는 사이트맵이 생성될 경로를 의미합니다.\n\n아래 옵션으로 추가되는 파일은 _site 폴더 안에 sitemap.xml 파일입니다. 해당 xml 파일은 site-path에서 “/”다음에 넣으라고 지정했기 때문에 홈페이지주소/사이트맵 형태로 추가됩니다. 이 블로그의 사이트맵은 다음 위치에 있습니다. https://seheeopark.rbind.io/sitemap.xml\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"Mindful Analytics\"\n1  site-url: \"https://seheeopark.rbind.io\"\n2  site-path: \"/\"\n---\n\n1\n\n사이트 주소를 입력합니다.\n\n2\n\n사이트맵이 생성될 경로를 지정합니다.\n\n\n사이트맵을 만드는 yaml을 저장한 다음 블로그를 새로 render 해야 sitemap.xml 파일이 생성됩니다. _site 폴더 안에 sitemap.xml 파일을 확인해서 최신 홈페이지 구성으로 사이트맵이 잘 생성되었는지 확인할 수 있습니다.\n\n\n(2) 사이트맵 제출하기\n내 홈페이지가 등록된 구글 서치콘솔의 색인생성 &gt; Sitemaps 메뉴에서 사이트맵을 추가합니다. 사이트맵이 위치한 경로는 Quarto yaml에서 지정한 경로와 동일합니다. 사이트맵 등록 방법은 다음 동영상을 참고해 주세요."
+  },
+  {
+    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#메타설명-추가",
+    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#메타설명-추가",
+    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
+    "section": "3. 메타설명 추가",
+    "text": "3. 메타설명 추가\nQuarto 블로그는 metadata를 추가하여 블로그 글의 검색 엔진 최적화를 할 수 있습니다. 가장 손쉽게 구글 서치 엔진에 정보를 제공하는 방법은 각 블로그 포스팅 마다 description을 추가하는 것 입니다.\ndescription은 블로그 글의 요약된 정보를 의미합니다. 구글 검색 시스템은 html 메타정보에서 description을 우선 읽어 들여, 사용자에게 찾는 정보에 근접한 페이지를 노출합니다. 따라서 이 description을 블로그 글을 정확히 요약하여 전달하도록 작성함으로써 검색 상위 노출 효과를 노릴 수 있습니다.\n구글에서는 우수한 메타 설명을 만드는 권장사항을 다음과 같이 제시하고 있습니다.\n\n각 페이지마다 고유한 설명을 작성합니다.\n페이지의 주요 내용을 요약합니다.\n\n\n\n\n구글 메타설명 권장사항 예시\n\n\n더 자세한 구글 권장사항은 여기에서 확인할 수 있습니다.\n이 블로그 글의 description은 다음과 같이 추가되어 있습니다.\n---\ntitle: \"Quarto 블로그 SEO 최적화\"\ndescription: \"Quarto로 만드는 블로그 구글 검색 상위 노출을 위한 SEO 최적화를 위해 서치콘솔 등록, 사이트맵 제출, 메타설명 추가 방법을 다룹니다.\"\n---\n\n여러분이 열심히 작성한 Quarto 블로그가 구글 검색에 누락되지 않도록, 오늘 소개해 드린 3가지 SEO 세팅은 꼭 신경써서 등록하시길 바랍니다.\n\n\n\n구글 서치콘솔에서 홈페이지 등록하기\n구글 메타설명 권장사항 예시"
   }
 ]
