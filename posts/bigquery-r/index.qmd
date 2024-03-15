@@ -5,7 +5,7 @@ date: "2024-02-26"
 date-modified: "2024-03-14"
 date-format: "iso"
 toc: true 
-categories: [featured, bigquery, SQL, R]
+categories: [featured, bigquery, sql, R]
 freeze: true 
 image: bigquery-r-thumbnail.webp
 ---

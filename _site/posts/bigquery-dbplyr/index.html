@@ -162,6 +162,11 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -185,7 +190,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
                 <div class="quarto-category">bigquery</div>
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">dbplyr</div>
-                <div class="quarto-category">SQL</div>
+                <div class="quarto-category">sql</div>
               </div>
                   </div>
   </div>
@@ -318,7 +323,7 @@ gtag('config', 'G-714N6G1JWS', { 'anonymize_ip': true});
 <p>데이터베이스 연결이 성공하면 <code>con</code> 객체에 데이터베이스 연결 정보가 저장됩니다. 연결이 되었다면, 다음 이미지처럼 RStudio &gt; Connections 탭에서 연결된 데이터베이스가 갖고 있는 테이블 정보를 확인할 수 있습니다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="bigquery_publicdata_con.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="빅쿼리 공개데이터 테이블셋 리스트"><img src="bigquery_publicdata_con.png" class="img-fluid figure-img" alt="빅쿼리 공개데이터 테이블셋 리스트"></a></p>
+<p><a href="bigquery_publicdata_con.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="빅쿼리 공개데이터 테이블셋 리스트"><img src="bigquery_publicdata_con.png" class="img-fluid figure-img" alt="빅쿼리 공개데이터 테이블셋 리스트"></a></p>
 <figcaption>빅쿼리 공개데이터 테이블셋 리스트</figcaption>
 </figure>
 </div>
@@ -396,7 +401,7 @@ LIMIT 10</code></pre>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="word_count_size.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="collect() 함수 실행 시 다운로드하는 데이터 크기"><img src="word_count_size.png" class="img-fluid figure-img" alt="collect() 함수 실행 시 다운로드하는 데이터 크기"></a></p>
+<p><a href="word_count_size.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="collect() 함수 실행 시 다운로드하는 데이터 크기"><img src="word_count_size.png" class="img-fluid figure-img" alt="collect() 함수 실행 시 다운로드하는 데이터 크기"></a></p>
 <figcaption>collect() 함수 실행 시 다운로드하는 데이터 크기</figcaption>
 </figure>
 </div>
@@ -993,7 +998,7 @@ Made with <a href="https://quarto.org/docs/websites/website-blog.html">Quarto</a
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"loop":false,"closeEffect":"zoom","descPosition":"bottom","openEffect":"zoom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -210,9 +210,9 @@ font-style: inherit;">---</span></span></code></pre></div>
 
  ]]></description>
   <category>featured</category>
-  <category>Quarto</category>
+  <category>quarto</category>
   <category>R</category>
-  <category>SEO</category>
+  <category>seo</category>
   <guid>https://seheeopark.rbind.io/posts/quarto-blog-seo-setting/</guid>
   <pubDate>Wed, 13 Mar 2024 15:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/quarto-blog-seo-setting/seo-thumbnail.webp" medium="image" type="image/webp"/>
@@ -346,7 +346,7 @@ font-style: inherit;">"여기에 본인 계정 프로젝트 이름을 넣습니�
 <p>데이터베이스 연결이 성공하면 <code>con</code> 객체에 데이터베이스 연결 정보가 저장됩니다. 연결이 되었다면, 다음 이미지처럼 RStudio &gt; Connections 탭에서 연결된 데이터베이스가 갖고 있는 테이블 정보를 확인할 수 있습니다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="bigquery_publicdata_con.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="빅쿼리 공개데이터 테이블셋 리스트"><img src="https://seheeopark.rbind.io/posts/bigquery-dbplyr/bigquery_publicdata_con.png" class="img-fluid figure-img" alt="빅쿼리 공개데이터 테이블셋 리스트"></a></p>
+<p><a href="bigquery_publicdata_con.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="빅쿼리 공개데이터 테이블셋 리스트"><img src="https://seheeopark.rbind.io/posts/bigquery-dbplyr/bigquery_publicdata_con.png" class="img-fluid figure-img" alt="빅쿼리 공개데이터 테이블셋 리스트"></a></p>
 <figcaption>빅쿼리 공개데이터 테이블셋 리스트</figcaption>
 </figure>
 </div>
@@ -480,7 +480,7 @@ font-style: inherit;">collect</span>(word_count_query)</span></code></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="word_count_size.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="collect() 함수 실행 시 다운로드하는 데이터 크기"><img src="https://seheeopark.rbind.io/posts/bigquery-dbplyr/word_count_size.png" class="img-fluid figure-img" alt="collect() 함수 실행 시 다운로드하는 데이터 크기"></a></p>
+<p><a href="word_count_size.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="collect() 함수 실행 시 다운로드하는 데이터 크기"><img src="https://seheeopark.rbind.io/posts/bigquery-dbplyr/word_count_size.png" class="img-fluid figure-img" alt="collect() 함수 실행 시 다운로드하는 데이터 크기"></a></p>
 <figcaption>collect() 함수 실행 시 다운로드하는 데이터 크기</figcaption>
 </figure>
 </div>
@@ -540,7 +540,7 @@ font-style: inherit;">dbDisconnect</span>(con)</span></code></pre></div>
   <category>bigquery</category>
   <category>R</category>
   <category>dbplyr</category>
-  <category>SQL</category>
+  <category>sql</category>
   <guid>https://seheeopark.rbind.io/posts/bigquery-dbplyr/</guid>
   <pubDate>Wed, 13 Mar 2024 15:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/bigquery-dbplyr/dbplyr_thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
@@ -650,7 +650,7 @@ font-style: inherit;">bq_auth</span>()</span></code></pre></div>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="bq_auth_web.webp" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="빅쿼리 계정 인증 필요"><img src="https://seheeopark.rbind.io/posts/bigquery-r/bq_auth_web.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="빅쿼리 계정 인증 필요"></a></p>
+<p><a href="bq_auth_web.webp" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="빅쿼리 계정 인증 필요"><img src="https://seheeopark.rbind.io/posts/bigquery-r/bq_auth_web.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" alt="빅쿼리 계정 인증 필요"></a></p>
 <figcaption>빅쿼리 계정 인증 필요</figcaption>
 </figure>
 </div>
@@ -772,8 +772,8 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="reactable html-widget html-fill-item" id="htmlwidget-a6051899593f4a311d5c" style="width:auto;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-a6051899593f4a311d5c">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"source_year":[2005,2005,2005,2005,2005,2005],"year":[2005,2005,2005,2005,2005,2005],"month":[1,2,5,8,5,5],"day":["NA","NA","NA","NA","NA","NA"],"wday":[3,7,4,4,6,4],"state":[null,null,null,null,null,null],"is_male":[true,false,false,false,true,false],"child_race":["NA","NA","NA","NA","NA","NA"],"weight_pounds":[7.8043640748,5.37486994756,6.4374980504,6.56095691712,8.81187661214,6.12444163836],"plurality":[1,2,1,1,1,1],"apgar_1min":["NA","NA","NA","NA","NA","NA"],"apgar_5min":["NA",8,7,9,9,"NA"],"mother_residence_state":[null,null,null,null,null,null],"mother_race":[38,1,"NA","NA","NA",7],"mother_age":[30,29,24,26,22,28],"gestation_weeks":[40,38,39,"NA",40,39],"lmp":["04172004","05992004","99999999","99999999","99999999","08112004"],"mother_married":[true,true,true,false,false,true],"mother_birth_state":[null,null,null,null,null,null],"cigarette_use":[null,false,null,null,null,null],"cigarettes_per_day":["NA","NA","NA","NA","NA","NA"],"alcohol_use":[null,false,null,null,null,null],"drinks_per_week":["NA","NA","NA","NA","NA","NA"],"weight_gain_pounds":[99,8,99,25,99,99],"born_alive_alive":[5,9,"NA","NA","NA",0],"born_alive_dead":[2,0,"NA","NA","NA",0],"born_dead":[1,0,"NA","NA","NA",0],"ever_born":[8,10,"NA","NA","NA",1],"father_race":[38,1,"NA","NA","NA",7],"father_age":[24,31,31,99,33,33],"record_weight":[1,1,1,1,1,1]},"columns":[{"id":"source_year","name":"source_year","type":"numeric"},{"id":"year","name":"year","type":"numeric"},{"id":"month","name":"month","type":"numeric"},{"id":"day","name":"day","type":"numeric"},{"id":"wday","name":"wday","type":"numeric"},{"id":"state","name":"state","type":"character"},{"id":"is_male","name":"is_male","type":"logical"},{"id":"child_race","name":"child_race","type":"numeric"},{"id":"weight_pounds","name":"weight_pounds","type":"numeric"},{"id":"plurality","name":"plurality","type":"numeric"},{"id":"apgar_1min","name":"apgar_1min","type":"numeric"},{"id":"apgar_5min","name":"apgar_5min","type":"numeric"},{"id":"mother_residence_state","name":"mother_residence_state","type":"character"},{"id":"mother_race","name":"mother_race","type":"numeric"},{"id":"mother_age","name":"mother_age","type":"numeric"},{"id":"gestation_weeks","name":"gestation_weeks","type":"numeric"},{"id":"lmp","name":"lmp","type":"character"},{"id":"mother_married","name":"mother_married","type":"logical"},{"id":"mother_birth_state","name":"mother_birth_state","type":"character"},{"id":"cigarette_use","name":"cigarette_use","type":"logical"},{"id":"cigarettes_per_day","name":"cigarettes_per_day","type":"numeric"},{"id":"alcohol_use","name":"alcohol_use","type":"logical"},{"id":"drinks_per_week","name":"drinks_per_week","type":"numeric"},{"id":"weight_gain_pounds","name":"weight_gain_pounds","type":"numeric"},{"id":"born_alive_alive","name":"born_alive_alive","type":"numeric"},{"id":"born_alive_dead","name":"born_alive_dead","type":"numeric"},{"id":"born_dead","name":"born_dead","type":"numeric"},{"id":"ever_born","name":"ever_born","type":"numeric"},{"id":"father_race","name":"father_race","type":"numeric"},{"id":"father_age","name":"father_age","type":"numeric"},{"id":"record_weight","name":"record_weight","type":"numeric"}],"resizable":true,"nowrap":true,"dataKey":"f43128bdd846e2adb9e1eb210700dab4"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
+<div class="reactable html-widget html-fill-item" id="htmlwidget-8722f79c4d3c42c8524b" style="width:auto;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8722f79c4d3c42c8524b">{"x":{"tag":{"name":"Reactable","attribs":{"data":{"source_year":[2005,2005,2005,2005,2005,2005],"year":[2005,2005,2005,2005,2005,2005],"month":[1,2,5,8,5,5],"day":["NA","NA","NA","NA","NA","NA"],"wday":[3,7,4,4,6,4],"state":[null,null,null,null,null,null],"is_male":[true,false,false,false,true,false],"child_race":["NA","NA","NA","NA","NA","NA"],"weight_pounds":[7.8043640748,5.37486994756,6.4374980504,6.56095691712,8.81187661214,6.12444163836],"plurality":[1,2,1,1,1,1],"apgar_1min":["NA","NA","NA","NA","NA","NA"],"apgar_5min":["NA",8,7,9,9,"NA"],"mother_residence_state":[null,null,null,null,null,null],"mother_race":[38,1,"NA","NA","NA",7],"mother_age":[30,29,24,26,22,28],"gestation_weeks":[40,38,39,"NA",40,39],"lmp":["04172004","05992004","99999999","99999999","99999999","08112004"],"mother_married":[true,true,true,false,false,true],"mother_birth_state":[null,null,null,null,null,null],"cigarette_use":[null,false,null,null,null,null],"cigarettes_per_day":["NA","NA","NA","NA","NA","NA"],"alcohol_use":[null,false,null,null,null,null],"drinks_per_week":["NA","NA","NA","NA","NA","NA"],"weight_gain_pounds":[99,8,99,25,99,99],"born_alive_alive":[5,9,"NA","NA","NA",0],"born_alive_dead":[2,0,"NA","NA","NA",0],"born_dead":[1,0,"NA","NA","NA",0],"ever_born":[8,10,"NA","NA","NA",1],"father_race":[38,1,"NA","NA","NA",7],"father_age":[24,31,31,99,33,33],"record_weight":[1,1,1,1,1,1]},"columns":[{"id":"source_year","name":"source_year","type":"numeric"},{"id":"year","name":"year","type":"numeric"},{"id":"month","name":"month","type":"numeric"},{"id":"day","name":"day","type":"numeric"},{"id":"wday","name":"wday","type":"numeric"},{"id":"state","name":"state","type":"character"},{"id":"is_male","name":"is_male","type":"logical"},{"id":"child_race","name":"child_race","type":"numeric"},{"id":"weight_pounds","name":"weight_pounds","type":"numeric"},{"id":"plurality","name":"plurality","type":"numeric"},{"id":"apgar_1min","name":"apgar_1min","type":"numeric"},{"id":"apgar_5min","name":"apgar_5min","type":"numeric"},{"id":"mother_residence_state","name":"mother_residence_state","type":"character"},{"id":"mother_race","name":"mother_race","type":"numeric"},{"id":"mother_age","name":"mother_age","type":"numeric"},{"id":"gestation_weeks","name":"gestation_weeks","type":"numeric"},{"id":"lmp","name":"lmp","type":"character"},{"id":"mother_married","name":"mother_married","type":"logical"},{"id":"mother_birth_state","name":"mother_birth_state","type":"character"},{"id":"cigarette_use","name":"cigarette_use","type":"logical"},{"id":"cigarettes_per_day","name":"cigarettes_per_day","type":"numeric"},{"id":"alcohol_use","name":"alcohol_use","type":"logical"},{"id":"drinks_per_week","name":"drinks_per_week","type":"numeric"},{"id":"weight_gain_pounds","name":"weight_gain_pounds","type":"numeric"},{"id":"born_alive_alive","name":"born_alive_alive","type":"numeric"},{"id":"born_alive_dead","name":"born_alive_dead","type":"numeric"},{"id":"born_dead","name":"born_dead","type":"numeric"},{"id":"ever_born","name":"ever_born","type":"numeric"},{"id":"father_race","name":"father_race","type":"numeric"},{"id":"father_age","name":"father_age","type":"numeric"},{"id":"record_weight","name":"record_weight","type":"numeric"}],"resizable":true,"nowrap":true,"dataKey":"f43128bdd846e2adb9e1eb210700dab4"},"children":[]},"class":"reactR_markup"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>차라리 출력하는 열 갯수를 줄이는 것이 비용을 많이 절약할 수 있습니다. R에서는 실제 sql 문구를 적용하기 전에는 데이터 양이 얼마나 될 지 미리 알 수가 없습니다. 따라서 빅쿼리 초보 사용자라면 <strong>구글 빅쿼리 콘솔에서 실제로 SQL 구문을 수정해 보면서 데이터 양을 비교</strong>해 보는 것을 추천합니다.</p>
@@ -782,7 +782,7 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="natality_all.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="모든 열 1000개 행 조회 시 용량"><img src="https://seheeopark.rbind.io/posts/bigquery-r/natality_all.png" class="img-fluid figure-img" alt="모든 열 1000개 행 조회 시 용량"></a></p>
+<p><a href="natality_all.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="모든 열 1000개 행 조회 시 용량"><img src="https://seheeopark.rbind.io/posts/bigquery-r/natality_all.png" class="img-fluid figure-img" alt="모든 열 1000개 행 조회 시 용량"></a></p>
 <figcaption>모든 열 1000개 행 조회 시 용량</figcaption>
 </figure>
 </div>
@@ -791,7 +791,7 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="natality_3columns.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="3개 열 1000개 행 조회 시 용량"><img src="https://seheeopark.rbind.io/posts/bigquery-r/natality_3columns.png" class="img-fluid figure-img" alt="3개 열 1000개 행 조회 시 용량"></a></p>
+<p><a href="natality_3columns.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" data-glightbox="description: .lightbox-desc-3" title="3개 열 1000개 행 조회 시 용량"><img src="https://seheeopark.rbind.io/posts/bigquery-r/natality_3columns.png" class="img-fluid figure-img" alt="3개 열 1000개 행 조회 시 용량"></a></p>
 <figcaption>3개 열 1000개 행 조회 시 용량</figcaption>
 </figure>
 </div>
@@ -800,7 +800,7 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="natality_3columns_all.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4" title="3개 열 모든 행 조회 시 용량"><img src="https://seheeopark.rbind.io/posts/bigquery-r/natality_3columns_all.png" class="img-fluid figure-img" alt="3개 열 모든 행 조회 시 용량"></a></p>
+<p><a href="natality_3columns_all.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" data-glightbox="description: .lightbox-desc-4" title="3개 열 모든 행 조회 시 용량"><img src="https://seheeopark.rbind.io/posts/bigquery-r/natality_3columns_all.png" class="img-fluid figure-img" alt="3개 열 모든 행 조회 시 용량"></a></p>
 <figcaption>3개 열 모든 행 조회 시 용량</figcaption>
 </figure>
 </div>
@@ -818,7 +818,7 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
  ]]></description>
   <category>featured</category>
   <category>bigquery</category>
-  <category>SQL</category>
+  <category>sql</category>
   <category>R</category>
   <guid>https://seheeopark.rbind.io/posts/bigquery-r/</guid>
   <pubDate>Sun, 25 Feb 2024 15:00:00 GMT</pubDate>
@@ -1183,6 +1183,7 @@ font-style: inherit;">use_github</span>() </span></code></pre></div>
   <category>featured</category>
   <category>git</category>
   <category>quarto</category>
+  <category>R</category>
   <guid>https://seheeopark.rbind.io/posts/quarto-blog/</guid>
   <pubDate>Thu, 22 Feb 2024 15:00:00 GMT</pubDate>
 </item>

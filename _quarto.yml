@@ -13,10 +13,10 @@ website:
   favicon: images/favicon.webp 
   navbar:
     right:
-      - text: "Featured"
-        file: featured.qmd
       - text: "Blog"
         file: index.qmd
+      - text: "Featured"
+        file: featured.qmd
       - text: "About"
         file: about.qmd
       - icon: github
