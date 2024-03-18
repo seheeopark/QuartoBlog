@@ -6,7 +6,9 @@ website:
   site-url: "https://seheeopark.rbind.io"
   site-path: "/"
   description: "사려 깊은 데이터 분석 이야기"
+  page-navigation: true 
   google-analytics: "G-714N6G1JWS"
+  open-graph: true
   search: 
     location: navbar 
     type: overlay 
