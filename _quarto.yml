@@ -38,6 +38,8 @@ website:
       
 format:
   html:
+    include-in-header: gtm_head.html
+    include-before-body: gtm_body.html
     theme: 
       light: flatly
       dark: darkly 
