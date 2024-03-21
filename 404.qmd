@@ -1,0 +1,15 @@
+---
+title: "Page Not Found"
+format: html 
+comments: false
+---
+
+## 앗! 죄송합니다 Oops, I'm sorry
+
+![Photo by <a href="https://unsplash.com/@visuals?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">visuals</a> on <a href="https://unsplash.com/photos/blue-and-white-star-illustration-JpTY4gUviJM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  ](images/404_error.webp) 
+
+찾는 페이지가 존재하지 않습니다. 아마도 해당 페이지가 삭제되었거나 이름이 변경되었을 수 있습니다. [블로그 홈](https://seheeopark.rbind.io)에서 찾는 내용을 검색해 보세요.
+
+The page you requested cannot be found. Perhaps it was removed or renamed. 
+You may want to try searching to find contents at my [blog home](https://seheeopark.rbind.io). 
