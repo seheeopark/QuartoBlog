@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nQuarto 블로그 SEO 최적화 3가지 꿀팁\n\n\n\n\n\n\nfeatured\n\n\nquarto\n\n\nR\n\n\nseo\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nsql\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nsql\n\n\nR\n\n\n\n\n\n\n2024-02-26\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nR\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRStudio에서 Copilot 쓰기\n\n\n\n\n\n\nbigquery\n\n\nRstudio\n\n\ncopilot\n\n\ngithub\n\n\n\n\n\n\n2024-03-21\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 블로그 SEO 최적화 3가지 꿀팁\n\n\n\n\n\n\nfeatured\n\n\nquarto\n\n\nR\n\n\nseo\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nsql\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nsql\n\n\nR\n\n\n\n\n\n\n2024-02-26\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nR\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -201,34 +201,6 @@
     "title": "dbplyr로 bigquery 데이터 추출하기",
     "section": "3. 마무리",
     "text": "3. 마무리\n이렇게 데이터베이스에 대한 지식이 부족한 R 사용자에게 유용한 패키지 dbplyr를 소개해 드렸습니다. dbplyr 패키지를 사용하여 SQL을 사용하지 않고도 빅쿼리 데이터를 추출할 수 있습니다. 빅쿼리에 저장된 데이터가 너무 많아서 간단하게 데이터 형태를 살펴보고 요약해 보고 싶다면 전체 데이터를 다운로드하지 않아도 되기 때문에 시간과 비용이 크게 절감되니 꼭 활용해 보시기 바랍니다.\n\n\n\n빅쿼리 공개데이터 테이블셋 리스트\ncollect() 함수 실행 시 다운로드하는 데이터 크기"
-  },
-  {
-    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html",
-    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html",
-    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
-    "section": "",
-    "text": "구글 검색 시스템에서 내가 작성한 블로그 글이 누락되지 않도록 하려면 구글 서치 콘솔에 홈페이지를 등록해야 합니다.\n구글 서치 콘솔에 접속 합니다.\n속성 추가 버튼을 눌러서 내 홈페이지를 등록 합니다. 도메인을 구매하여 DNS 정보가 있다면 도메인(신규) 옵션을 선택합니다. 이 블로그 처럼 Netlify, rbind.io 등 직접 구매하지 않은 도메인으로 DNS 관리 정보가 없는 경우는 URL 접두어옵션에서 홈페이지 주소를 입력 합니다.\n\n\n\n구글 서치콘솔에서 홈페이지 등록하기"
-  },
-  {
-    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#서치콘솔에-홈페이지-등록",
-    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#서치콘솔에-홈페이지-등록",
-    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
-    "section": "",
-    "text": "구글 검색 시스템에서 내가 작성한 블로그 글이 누락되지 않도록 하려면 구글 서치 콘솔에 홈페이지를 등록해야 합니다.\n구글 서치 콘솔에 접속 합니다.\n속성 추가 버튼을 눌러서 내 홈페이지를 등록 합니다. 도메인을 구매하여 DNS 정보가 있다면 도메인(신규) 옵션을 선택합니다. 이 블로그 처럼 Netlify, rbind.io 등 직접 구매하지 않은 도메인으로 DNS 관리 정보가 없는 경우는 URL 접두어옵션에서 홈페이지 주소를 입력 합니다.\n\n\n\n구글 서치콘솔에서 홈페이지 등록하기"
-  },
-  {
-    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#사이트맵-제출",
-    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#사이트맵-제출",
-    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
-    "section": "2. 사이트맵 제출",
-    "text": "2. 사이트맵 제출\n\n(1) 사이트맵 생성하기\nQuarto 블로그는 자동으로 사이트맵을 생성해주지 않기 때문에, yaml에 사이트맵을 추가하는 옵션을 넣어 주어야 합니다.\n수정해야 하는 파일은 _quarto.yml입니다.\n이 블로그 사이트를 예시로 설명 드리겠습니다. 아래에는 이 블로그를 만들기 위한 _quarto.yml 파일 중 일부를 발췌해서 보여 드리고 있습니다.\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"Mindful Analytics\"\n---\n_quarto.yml 파일에 다음과 같이 2줄을 추가해서 sitemap을 만들 수 있습니다.\n\nwebsite 옵션 아래 site-url: “내 웹사이트 주소”를 추가합니다.\nsite-path: “/”는 사이트맵이 생성될 경로를 의미합니다.\n\n아래 옵션으로 추가되는 파일은 _site 폴더 안에 sitemap.xml 파일입니다. 해당 xml 파일은 site-path에서 “/”다음에 넣으라고 지정했기 때문에 홈페이지주소/사이트맵 형태로 추가됩니다. 이 블로그의 사이트맵은 다음 위치에 있습니다. https://seheeopark.rbind.io/sitemap.xml\n---\nproject:\n  type: website\n\nwebsite:\n  title: \"Mindful Analytics\"\n1  site-url: \"https://seheeopark.rbind.io\"\n2  site-path: \"/\"\n---\n\n1\n\n사이트 주소를 입력합니다.\n\n2\n\n사이트맵이 생성될 경로를 지정합니다.\n\n\n사이트맵을 만드는 yaml을 저장한 다음 블로그를 새로 render 해야 sitemap.xml 파일이 생성됩니다. _site 폴더 안에 sitemap.xml 파일을 확인해서 최신 홈페이지 구성으로 사이트맵이 잘 생성되었는지 확인할 수 있습니다.\n\n\n(2) 사이트맵 제출하기\n내 홈페이지가 등록된 구글 서치콘솔의 색인생성 &gt; Sitemaps 메뉴에서 사이트맵을 추가합니다. 사이트맵이 위치한 경로는 Quarto yaml에서 지정한 경로와 동일합니다. 사이트맵 등록 방법은 다음 동영상을 참고해 주세요."
-  },
-  {
-    "objectID": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#메타설명-추가",
-    "href": "posts/quarto-blog-seo-setting/quarto-blog-seo-setting.html#메타설명-추가",
-    "title": "Quarto 블로그 SEO 최적화 3가지 꿀팁",
-    "section": "3. 메타설명 추가",
-    "text": "3. 메타설명 추가\nQuarto 블로그는 metadata를 추가하여 블로그 글의 검색 엔진 최적화를 할 수 있습니다. 가장 손쉽게 구글 서치 엔진에 정보를 제공하는 방법은 각 블로그 포스팅 마다 description을 추가하는 것 입니다.\ndescription은 블로그 글의 요약된 정보를 의미합니다. 구글 검색 시스템은 html 메타정보에서 description을 우선 읽어 들여, 사용자에게 찾는 정보에 근접한 페이지를 노출합니다. 따라서 이 description을 블로그 글을 정확히 요약하여 전달하도록 작성함으로써 검색 상위 노출 효과를 노릴 수 있습니다.\n구글에서는 우수한 메타 설명을 만드는 권장사항을 다음과 같이 제시하고 있습니다.\n\n각 페이지마다 고유한 설명을 작성합니다.\n페이지의 주요 내용을 요약합니다.\n\n\n\n\n구글 메타설명 권장사항 예시\n\n\n더 자세한 구글 권장사항은 여기에서 확인할 수 있습니다.\n이 블로그 글의 description은 다음과 같이 추가되어 있습니다.\n---\ntitle: \"Quarto 블로그 SEO 최적화\"\ndescription: \"Quarto로 만드는 블로그 구글 검색 상위 노출을 위한 SEO 최적화를 위해 서치콘솔 등록, 사이트맵 제출, 메타설명 추가 방법을 다룹니다.\"\n---\n\n여러분이 열심히 작성한 Quarto 블로그가 구글 검색에 누락되지 않도록, 오늘 소개해 드린 3가지 SEO 세팅은 꼭 신경써서 등록하시길 바랍니다.\n\n\n\n구글 서치콘솔에서 홈페이지 등록하기\n구글 메타설명 권장사항 예시"
   },
   {
     "objectID": "posts/bigquery-dbplyr/index.html",
@@ -411,5 +383,40 @@
     "title": "R Quarto로 만든 블로그 배포(feat. Netlify)",
     "section": "Footnotes",
     "text": "Footnotes\n\n\n정적 웹사이트란 미리 웹 페이지 내용이 생성되어 서버에서 사용자 요청에 따라 생성되거나 처리되는 컨텐츠가 없는 사이트 입니다.↩︎"
+  },
+  {
+    "objectID": "posts/copilot-in-rstudio/index.html#copilot-소개",
+    "href": "posts/copilot-in-rstudio/index.html#copilot-소개",
+    "title": "RStudio에서 Copilot 쓰기",
+    "section": "1. Copilot 소개",
+    "text": "1. Copilot 소개\n프로그래머를 위한 AI 짝궁으로 깃헙에서 출시한 - OpenAI와 공동 개발한 - 코파일럿. 쓰지 않은 사람은 있어도 한 번 쓰고 안 쓰는 사람은 없을 것 같아요. 그만큼 코파일럿을 사용할 때 코드 작성하는 시간이 크게 단축되고 있습니다. 깃헙에 저장된 수많은 프로그래밍 언어를 기반으로 훈련된 LLM AI 모델로 수시로 바뀌는 최신 패키지 내용도 잘 숙지하고 있어요. 개인적인 소감으로는 챗GPT 보다 더 간결하면서 명확한 코드, 특히 깔끔한 주석을 제안해 주기 때문에 “코파일럿이 한 수 위다”라고 생각합니다.\n깃헙 공홈에서도 RStudio에서 코파일럿이 활용 가능하다는 점을 홍보하지 않고 있기 때문에 의외로 RStudio 사용자들이 코파일럿을 사용하지 않는 경우가 있는 것 같습니다. 이 글에서는 RStudio에서 코파일럿을 사용하는 방법을 소개하고, 코파일럿을 사용하면서 느낀 점을 공유하겠습니다.\n\n(1) 깃헙 계정 준비\n코파일럿은 유료이며 깃헙 계정 연동이 필요합니다.\n\n깃헙 계정이 개인 계저이라면 개인용 코파일럿을 사용하는게 원칙입니다.\n회사(단체) 깃헙을 사용한다면 회사에섯 구매한 코파일럿을 함께 활용할 수 있습니다.\n\n이 글에서는 개인용 코파일럿 사용법을 중심으로 설명합니다.\n\n\n(2) 코파일럿 비용\n2024년 3월 현재, 개인용 코파일럿 비용은 월 $10 USD 입니다. 월 구독 형태로 언제든 해지 가능하구요. 연 구독을 이용하면 $100 USD로 약 2달 정도 금액으르 할인해 줍니다. 깃헙 계정당 1회에 한해 첫 30일은 무료로 활용할 수 있으니 조금 써 보다가 생각보다 활용도가 높지 않다면 30일 이내에 해지하는 것도 가능합니다.\n여러 개 IDE를 사용해도 코파일럿 비용은 월 1건만 청구됩니다. 저는 R은 RStudio, 파이썬은 VS Code를 이용하고 있어 2군데 다 연동을 해 놓았습니다. RStudio에서는 코파일럿 연동이 조금 늦게 되어서 (2023.11월 정식 출시) 코파일럿 연동된 VS Code 쓰다가 RStudio를 쓰면 조금 느려진 느낌이었는데, 이제 RStudio에서도 코파일럿을 맘껏 쓸 수 있어 너무 좋습니다."
+  },
+  {
+    "objectID": "posts/copilot-in-rstudio/index.html#rstudio에-copilot-연동하기",
+    "href": "posts/copilot-in-rstudio/index.html#rstudio에-copilot-연동하기",
+    "title": "RStudio에서 Copilot 쓰기",
+    "section": "2. RStudio에 Copilot 연동하기",
+    "text": "2. RStudio에 Copilot 연동하기\nRStudio 버전 2023.09.0 이후 버전부터 코파일럿 연동을 제공하고 있으니 최신 버전을 Posit 홈페이지를 통해 설치하시는 것을 추천합니다.\n\n(1) 깃헙에서 코파일럿 유료 구독 하기\n\n깃헙 로그인 후 우측 상단 내 계정 아이콘을 눌러 “Setting” 메뉴에 접속합니다.\n3번째 ‘Code, planning, and automation’ 메뉴에서 Copilot을 선택합니다.\n결제 정보 입력 후 구독을 시작합니다.\n\n\n\n(2) 코파일럿 연동하기\nRStudio가 제공하는 메뉴를 활용해서 1분 이내로 쉽게 연동할 수 이있습니다.\n\nRStudio 메뉴에 Tools &gt; Global Options &gt; Copilot을 선택합니다.\n첫번째 옵션에서 “Enable GitHub Copilot”을 체크박스를 선택합니다.\n팝업 창에서 링크와 코드를 안내합니다. 닫지 말고 코드를 메모하세요.\n팝업 창 링크를 열어서 내 깃헙 (코파일럿 구매한) 계정으로 로그인 합니다.\n코드 입력 창에서 안내 받은 코드 8자리를 입력하세요.\n\n\n\n(3) 코파일럿 사용 옵션\nRStudio에서 Tools &gt; Global Options &gt; Copilot 메뉴로 접속하면, 2가지 옵션이 더 있습니다.\n\nCopilot Indexing: 작업하는 프로젝트 폴더를 코파일럿이 접근하여 해당 코드를 활용하도록 허용할지 결정합니다. 체크박스를 선택 시 접근 허용하게 됩니다.\nCopilot Completion: 마지막 입력 후 시간이 얼마나 지났을 때 코파일럿이 코드를 제안할 지 시간을 설정합니다. 기본값은 300ms 입니다."
+  },
+  {
+    "objectID": "posts/copilot-in-rstudio/index.html#copilot-활용-시연",
+    "href": "posts/copilot-in-rstudio/index.html#copilot-활용-시연",
+    "title": "RStudio에서 Copilot 쓰기",
+    "section": "3. Copilot 활용 시연",
+    "text": "3. Copilot 활용 시연\n코파일럿을 활용한 코드 작성 시연을 통해 어떻게 코드를 제안하는지 확인해 보겠습니다.\n간단히 R에 내장된 mtcar 데이터를 활용하여 histogram을 그려보도록 코파일럿을 활용하겠습니다.\n\n먼저 코파일럿에게 내가 무엇을 할 지 간단히 주석으로 설명합니다.\n입력을 멈추고 기다리면 코파일럿이 코드를 제안하기 시작합니다. 제안하는 코드는 연한 회색으로 표시됩니다.\n제안한 코드를 받아들여 사용하려면 Tab 키를 누르면 됩니다.\n\n다음 코드는 100% 코파일럿이 제안한 코드 입니다. 코파일럿이 생성하는 코드는 매번 달라지기 때문에 여러분이 쓰실 때와 다를 수 있습니다.\n\n기본 버전\n\n\n# mtcars histogram\nhist(mtcars$mpg)\n\n\n\n\n\n\n\n\n\nggplot2 버전\n\n\n# mtcars histogram with dplyr and ggplot2 \nlibrary(dplyr)\nlibrary(ggplot2)\n\nmtcars %&gt;% \n  ggplot(aes(x = mpg)) +\n  geom_histogram()\n\n\n\n\n\n\n\n\n\nggplot2 고급 버전\n\n\n# mtcars histogram with ggplot2, white background, blue fill color \n# better bins, better title\n\nlibrary(dplyr)\nlibrary(ggplot2)\n\nmtcars %&gt;% \n  ggplot(aes(x = mpg)) +\n  geom_histogram(fill = \"blue\", bins = 20) +\n  theme_minimal() +\n  labs(title = \"Histogram of mtcars mpg\")\n\n\n\n\n\n\n\n\n제가 한 것이라고는 주석을 잘 달아서 방향을 알려준 뒤, tab과 enter 키를 누른 것 뿐 입니다.\n\n설치 및 활용 동영상\n코파일럿 설치부터 샘플 코드 작성까지 아래 동영상을 통해 확인해 보세요."
+  },
+  {
+    "objectID": "posts/copilot-in-rstudio/index.html#copilot-활용-팁",
+    "href": "posts/copilot-in-rstudio/index.html#copilot-활용-팁",
+    "title": "RStudio에서 Copilot 쓰기",
+    "section": "4. Copilot 활용 팁",
+    "text": "4. Copilot 활용 팁\n코파일럿을 사용하면서 몇 가지 팁을 공유하겠습니다.\n\n(1) 명확한 주석 달기\n코파일럿에게 코드 추천을 잘 받으려면 명확하게 주석을 달아주는 것이 중요합니다. 위 예시에서 보았듯이 dplyr과 ggplot2를 사용하여 히스토그램을 그리겠다고 하니, 해당 패키지를 활용하는 코드로 제안해 줍니다.\n\n\n(2) 제안 코드 확인하기\n코파일럿이 제안하는 코드가 꼭 내가 작성하려던 내용이 아닐 수 있습니다. 따라서 코드를 무작성(무지성으로) 받지 않고, 한줄 한줄 꼼꼼하게 읽으면서 내가 원하는 코드인지 확인해야 합니다.\n프로그래밍 초보 시절에는 특히 코드가 무엇을 의미하는지 100% 이해하지 못하고 여기저기서 ctrl + c & v 하기 바쁜데요. 이 때 해당 코드를 한줄 한줄 실행하면서 어떤 결과가 나오는지 직접 확인하는 것이 좋습니다.\n만약 결과값이 내가 예상한 방향이 아니라면 코파일럿 제안 내용을 삭제하고 좀 더 명확한 주석을 적어 코파일럿이 다시 제안하도록 합니다.\n\n\n(3) 제안 코드 수정하기\n코파일럿이 제안한 코드가 아주 방향이 다르지 않을 때는, 해당 코드를 직접 수정합니다. 가령 위 예시에서 히스토그램을 ggplot2 패키지로 그렸을 때 막대 너비를 수정하고 싶었는데 코파일럿이 제대로 제안하지 못 했어요. bins 옵션을 직접 추가해서 해결할 수 있었습니다."
+  },
+  {
+    "objectID": "posts/copilot-in-rstudio/index.html#copilot-활용-후기",
+    "href": "posts/copilot-in-rstudio/index.html#copilot-활용-후기",
+    "title": "RStudio에서 Copilot 쓰기",
+    "section": "5. Copilot 활용 후기",
+    "text": "5. Copilot 활용 후기\n코파일럿을 사용하면서 코드 작성 시간이 확실히 단축되었습니다. 특히 코파일럿은 코드만 제안하는 것에서 더 나아가 명확한 주석도 추가해 주기 때문에, 코드를 읽고 이해하기 쉽게 작성할 수 있었습니다. 다른 팀원들과 코드를 공유해야 한다면 코파일럿 사용 시 편안하게 코드를 작성할 수 있습니다.\n또 한가지, 코파일럿에 제안하는 주석이나 코드가 내가 읽기에 명확하지 않을 때도 있어요. 코파일럿이 대충 써 준 내용을 정교하게 다듬으면서 나의 문서 작성 실력도 한층 업그레이드 되는 것 같습니다.\n마지막으로 빈 종이를 보면 무엇부터 시작해야 하나 망설이거나 부담을 느끼는 시간이 크게 단축 됩니다. 코파일럿을 사용 시 비용이 꾸준하게 발생하지만, 프로그래밍에 있어서는 어떤 AI 지원 도구보다 만족도가 높습니다.\n[Disclaimer] 제 후기가 너무 칭찬 일색이라 의심하실 수도 있을 것 같은데, 이 글은 깃헙에서 어떠한 지원도 받지 않은 활용기 입니다. 여러분도 코파일럿과 함께 빠르게 R 숙련도를 높이면 좋겠다는 바람으로 작성하였으니 오해 없으시길 바랍니다."
   }
 ]

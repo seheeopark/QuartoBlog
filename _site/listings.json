@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/copilot-in-rstudio/index.html",
       "/posts/quarto-blog-seo-setting/index.html",
       "/posts/bigquery-dbplyr/index.html",
       "/posts/bigquery-r/index.html",
