@@ -1,5 +1,6 @@
 project:
   type: website
+  title: "Mindful Analytics"
 
 website:
   title: "Mindful Analytics"

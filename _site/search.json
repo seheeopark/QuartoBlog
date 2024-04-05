@@ -46,7 +46,7 @@
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRStudio에서 Copilot 쓰기\n\n\n\n\n\n\nbigquery\n\n\nRstudio\n\n\ncopilot\n\n\ngithub\n\n\n\n\n\n\n2024-03-21\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 블로그 SEO 최적화 3가지 꿀팁\n\n\n\n\n\n\nfeatured\n\n\nquarto\n\n\nR\n\n\nseo\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nsql\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nsql\n\n\nR\n\n\n\n\n\n\n2024-02-26\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nR\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n클라우드 데이터 웨어하우스 어떤 기준으로 고를까?\n\n\n\n\n\n\nbigquery\n\n\nsql\n\n\ndata warehouse\n\n\n\n\n\n\n2024-03-23\n\n\n박세희\n\n\n6 min\n\n\n\n\n\n\n\n\n\n\n\n\nRStudio에서 Copilot 쓰기\n\n\n\n\n\n\nbigquery\n\n\nRstudio\n\n\ncopilot\n\n\ngithub\n\n\n\n\n\n\n2024-03-21\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nQuarto 블로그 SEO 최적화 3가지 꿀팁\n\n\n\n\n\n\nfeatured\n\n\nquarto\n\n\nR\n\n\nseo\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\ndbplyr로 bigquery 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nR\n\n\ndbplyr\n\n\nsql\n\n\n\n\n\n\n2024-03-14\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR에서 구글빅쿼리 데이터 추출하기\n\n\n\n\n\n\nfeatured\n\n\nbigquery\n\n\nsql\n\n\nR\n\n\n\n\n\n\n2024-02-26\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만든 블로그 배포(feat. Netlify)\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nnetlify\n\n\n\n\n\n\n2024-02-24\n\n\n박세희\n\n\n4 min\n\n\n\n\n\n\n\n\n\n\n\n\nR Quarto로 만드는 블로그\n\n\n\n\n\n\nfeatured\n\n\ngit\n\n\nquarto\n\n\nR\n\n\n\n\n\n\n2024-02-23\n\n\n박세희\n\n\n5 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -418,5 +418,33 @@
     "title": "RStudio에서 Copilot 쓰기",
     "section": "5. Copilot 활용 후기",
     "text": "5. Copilot 활용 후기\n\n코파일럿을 사용하면서 코드 작성 시간이 확실히 단축되었습니다.\n\n특히 코파일럿은 코드만 제안하는 것에서 더 나아가 명확한 주석도 추가해 주기 때문에, 코드를 읽고 이해하기 쉽게 작성할 수 있었습니다. 다른 팀원들과 코드를 공유해야 한다면 코파일럿 사용 시 편안하게 코드를 작성할 수 있습니다.\n\n코파일럿에 제안하는 주석이나 코드가 내가 읽기에 명확하지 않을 때도 있어요.\n\n코파일럿이 대충 써 준 내용을 정교하게 다듬으면서 나의 문서 작성 실력도 한층 업그레이드 되는 것 같습니다.\n\n시작을 망설이거나 빈 화면에 부담을 느끼는 시간이 크게 단축 됩니다.\n\n코파일럿과 함께 코드 작성을 바로 시작하세요. 코드를 하나도 몰라도 시작할 수 이어요.\n\n코파일럿을 사용 시 비용이 꾸준하게 발생하지만, 프로그래밍에 있어서는 어떤 AI 지원 도구보다 만족도가 높습니다.\n\n[Disclaimer] 제 후기가 너무 칭찬 일색이라 의심하실 수도 있을 것 같은데, 이 글은 깃헙에서 어떠한 지원도 받지 않은 활용기 입니다. 여러분도 코파일럿과 함께 빠르게 R 숙련도를 높이면 좋겠다는 바람으로 작성하였으니 오해 없으시길 바랍니다."
+  },
+  {
+    "objectID": "posts/which-data-warehouse-to-choose/index.html#데이터-웨어하우스-란",
+    "href": "posts/which-data-warehouse-to-choose/index.html#데이터-웨어하우스-란",
+    "title": "클라우드 데이터 웨어하우스 어떤 기준으로 고를까?",
+    "section": "1. 데이터 웨어하우스 란?",
+    "text": "1. 데이터 웨어하우스 란?\n데이터 웨어하우스는 의사결정 지원 시스템으로 데이터를 저장, 처리, 분석 하도록 설계된 클라우드 기반 데이터베이스 시스템 입니다. 데이터 웨어하우스는 비즈니스 인텔리전스(BI), 데이터 마이닝, 예측 분석 등 다양한 분석 작업을 수행하는 데 사용됩니다.\n최근 경영, 마케팅, 판매, 고객서비스 등 다양한 분야에서 데이터 활용이 중요해 지고 있기 때문에 데이터 웨어하우스 도입 또한 빠르게 증가하고 있습니다.\n현재 시장에서 가장 인기 있는 데이터 웨어하우스 서비스는 클라우드 기반의 구글 빅쿼리(Google BigQuery), 아마존 레드시프트(Amazon Redshift), 스노우플레이크(Snowflake) 등 입니다.\n각 서비스의 장점과 단점이 명확하게 존재하기 때문에 어떤 데이터 웨어하우스를 도입하는 게 좋을까 고민이 될 수 있습니다. 데이터 웨어하우스는 그 특성상 한 번 도입하면 쉽게 변경하기가 어렵기 때문에 신중하게 선택해야 합니다.\n이 글에서는 빅쿼리, 스노우 플레이크, 레드 시프트의 장단점을 비교하고 어떤 데이터 웨어하우스를 선택해야 하는지에 대해 알아보겠습니다."
+  },
+  {
+    "objectID": "posts/which-data-warehouse-to-choose/index.html#빅쿼리-vs-스노우-플레이크-vs-레드-시프트-비교",
+    "href": "posts/which-data-warehouse-to-choose/index.html#빅쿼리-vs-스노우-플레이크-vs-레드-시프트-비교",
+    "title": "클라우드 데이터 웨어하우스 어떤 기준으로 고를까?",
+    "section": "2. 빅쿼리 vs 스노우 플레이크 vs 레드 시프트 비교",
+    "text": "2. 빅쿼리 vs 스노우 플레이크 vs 레드 시프트 비교\n\n(1) 공통점\n\n클라우드 기반: 물리적 서버가 없는 클라우드 기반 서비스입니다.\nSQL 쿼리: SQL 쿼리를 사용하여 데이터를 처리합니다.\n데이터 분석: 데이터 분석, BI, 머신러닝 등 다양한 분석 작업을 수행할 수 있습니다.\n\n기능적으로는 3개 서비스가 큰 차이는 없습니다. 하지만 다음 차이점을 고려할 수 있습니다.\n\n\n(2) 차이점\n\n\n\n\n\n\n\n\n\n구분\n구글 빅쿼리\n스노우 플레이크\n아마존 레드 시프트\n\n\n\n\n비용\n최초 1TB/월 저장 비용 무료로 데이터 용량이 크지 않다면 가장 저렴\n데이터 저장 고정비 $23-$50/월 + 분석-계산 비용 별도 청구\n저장과 분석 비용이 가장 비쌈\n\n\n데이터 형식\nJSON, XML 기반 반정형 데이터 및 SQL 정형 데이터 지원\nJSON, XML, Avro, Parquet등 가장 다양한 형식 지원\nPostgreSQL 기반의 관계성 데이터를 JSON으로 지원\n\n\n아키텍처\n데이터 저장과 계산을 분리하여 빠른 속도 제공\n데이터 저장과 계산이 분리되고, 병렬 계산이 가능해서 속도가 빠름\n데이터 양이 많은 경우 처리 속ㄷ도가 느려질 수 있음\n\n\n확장성\n사용하는 만큼 자동으로 용량 조절하여 편리함\n\n데이터가 매우 많을 때는 가장 적합하다는 평\n\n\n사용 환경\n구글 클라우드 내에서만 사용 가능\n다양한 환경에서 사용 가능\n아마존 웹서비스 내에서만 사용 가능\n\n\n\n\n\n(1) 빅쿼리\n빅쿼리는 구글이 개발한 클라우드 기반 데이터 웨어하우스 서비스로, 서버리스 아키텍처를 사용하여 데이터를 저장하고 처리합니다. 빅쿼리는 SQL 쿼리를 사용하여 데이터를 처리하며, 데이터 분석, BI, 머신러닝 등 다양한 분석 작업을 수행할 수 있습니다.\n빅쿼리의 장점은 다음과 같습니다.\n\n빠른 속도: 빅쿼리는 대용량 데이터를 빠르게 처리할 수 있습니다.\n서버리스 아키텍처: 서버 관리가 필요 없어서 운영이 간편합니다.\n저렴한 비용: 사용한 만큼만 비용을 지불하면 되기 때문에 비용 효율적입니다.\n\n빅쿼리의 단점은 다음과 같습니다.\n\n지역 변경 불가: 지역으로 구분된 데이터 저장소를 변경할 수 없습니다. 변경하려면 새로운 프로젝트를 생성해서 복사하거나 이전할 수 있지만, 별도 비용이 발생합니다.\n지역 간 통합 분석 불가: 2개 이상 지역에 저장된 데이터셋을 통합하여 분석할 수 없습니다. 1개 지역으로 데이터롤 모아서 분석을 해야 합니다.\n\n\n\n(2) 스노우 플레이크\n스노우 플레이크는 클라우드 기반 데이터 웨어하우스 서비스로, 가상 데이터 웨어하우스를 사용하여 데이터를 저장하고 처리합니다. 스노우 플레이크는 SQL 쿼리를 사용하여 데이터를 처리하며, 데이터 분석, BI, 머신러닝 등 다양한 분석 작업을 수행할 수 있습니다.\n스노우 플레이크의 장점은 다음과 같습니다.\n\n빠른 속도: 스노우 플레이크는 대용량 데이터를 빠르게 처리할 수 있습니다.\n유연한 아키텍처: 가상 데이터 웨어하우스를 사용하여 데이터를 저장하고 처리하기 때문에 유연하게 확장할 수 있습니다.\n데이터 보안: 데이터 보안에 대한 우려가 적습니다.\n\n스노우 플레이크의 단점은 다음과 같습니다.\n\n비용: 빅쿼리에 비해 비용이 높을 수 있습니다.\n복잡한 쿼리: 복잡한 쿼리를 작성하기 어려울 수 있습니다.\n데이터 이관: 데이터를 스노우 플레이크로 이관하는 과정이 복잡할 수 있습니다.\n(3) 레드 시프트\n\n레드 시프트는 아마존이 개발한 클라우드 기반 데이터 웨어하우스 서비스로, 분산 데이터베이스를 사용하여 데이터를 저장하고 처리합니다. 레드 시프트는 SQL 쿼리를 사용하여 데이터를 처리하며, 데이터 분석, BI, 머신러닝 등 다양한 분석 작업을 수행할 수 있습니다.\n레드 시프트의 장점은 다음과 같습니다.\n\n확장성: 대용량 데이터를 가장 효율적으로 다룰 수 있습니다.\n\n레드 시프트의 단점은 다음과 같습니다.\n\n비용: 세 시스템 중 가장 비쌉니다.\n복잡한 쿼리: 복잡한 쿼리를 작성하기 어려울 수 있습니다.\n지원 형태 부족: JSON 형태만 지원해서 다양한 데이터베이스 연동이 어려울 수 있습니다."
+  },
+  {
+    "objectID": "posts/which-data-warehouse-to-choose/index.html#고려할-사항은",
+    "href": "posts/which-data-warehouse-to-choose/index.html#고려할-사항은",
+    "title": "클라우드 데이터 웨어하우스 어떤 기준으로 고를까?",
+    "section": "3. 고려할 사항은?",
+    "text": "3. 고려할 사항은?\n데이터웨어하우스 클라우드 시스템을 선택하는 기업/기관의 상황과 여건이 다르기 때문에 어떤 시스템 하나가 유일한 정답이 될 수는 없습니다. 그럼에도 불구하고 데이터웨어하우스를 새로 구축하거나 이전하려고 한다면 다음 사항을 고려하면 좋겠습니다.\n\n어떤 종류의 데이터를 저장할 것인가?\n기존 데이터 시스템과 어떻게 결합/병합 할까?\n얼마나 유동적으로 데이터 사이즈가 변화할까?\n누가 관리할 것인가?\n얼마나 빠른 속도 데이터 처리가 필요할까?\n비용이 얼마나 들까?"
+  },
+  {
+    "objectID": "posts/which-data-warehouse-to-choose/index.html#결론",
+    "href": "posts/which-data-warehouse-to-choose/index.html#결론",
+    "title": "클라우드 데이터 웨어하우스 어떤 기준으로 고를까?",
+    "section": "4. 결론",
+    "text": "4. 결론\n최근 가장 가파르게 확장되고 있는 서비스는 스노우플레이크 입니다. 다른 클라우드 서버와 연결이 가능하고, 다양한 분석 툴과 연계도 쉬운 편입니다. 또 구글, 아마존 생태계 내에 갇혀 있지 않아도 되는 것도 장점 입니다.\n반대로 만약 회사에서 주로 쓰는 서비스가 구글 애널리틱스 (GA4)라면, 굳이 다른 서비스를 연결하기 보다는 빅쿼리를 쓰는 게 쉽고 빠릅니다. 그래서 데이터 웨어하우스를 고를 때는 조직의 데이터 활용 기능과 시스템, 확장 가능성 등을 고려하여 신중히 결정하시기 바랍니다."
   }
 ]

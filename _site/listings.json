@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/which-data-warehouse-to-choose/index.html",
       "/posts/copilot-in-rstudio/index.html",
       "/posts/quarto-blog-seo-setting/index.html",
       "/posts/bigquery-dbplyr/index.html",

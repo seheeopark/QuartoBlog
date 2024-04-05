@@ -10,7 +10,162 @@
 <atom:link href="https://seheeopark.rbind.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>사려 깊은 데이터 분석 이야기</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Wed, 20 Mar 2024 15:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 22 Mar 2024 15:00:00 GMT</lastBuildDate>
+<item>
+  <title>클라우드 데이터 웨어하우스 어떤 기준으로 고를까?</title>
+  <dc:creator>박세희 </dc:creator>
+  <link>https://seheeopark.rbind.io/posts/which-data-warehouse-to-choose/</link>
+  <description><![CDATA[ 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3T26F7J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+<section id="데이터-웨어하우스-란" class="level2">
+<h2 class="anchored" data-anchor-id="데이터-웨어하우스-란">1. 데이터 웨어하우스 란?</h2>
+<p>데이터 웨어하우스는 <strong>의사결정 지원 시스템</strong>으로 데이터를 저장, 처리, 분석 하도록 설계된 클라우드 기반 데이터베이스 시스템 입니다. 데이터 웨어하우스는 <strong>비즈니스 인텔리전스(BI)</strong>, <strong>데이터 마이닝</strong>, <strong>예측 분석</strong> 등 다양한 분석 작업을 수행하는 데 사용됩니다.</p>
+<p>최근 경영, 마케팅, 판매, 고객서비스 등 다양한 분야에서 데이터 활용이 중요해 지고 있기 때문에 데이터 웨어하우스 도입 또한 빠르게 증가하고 있습니다.</p>
+<p>현재 시장에서 가장 인기 있는 데이터 웨어하우스 서비스는 클라우드 기반의 <strong>구글 빅쿼리(Google BigQuery)</strong>, <strong>아마존 레드시프트(Amazon Redshift)</strong>, <strong>스노우플레이크(Snowflake)</strong> 등 입니다.</p>
+<p>각 서비스의 장점과 단점이 명확하게 존재하기 때문에 어떤 데이터 웨어하우스를 도입하는 게 좋을까 고민이 될 수 있습니다. 데이터 웨어하우스는 그 특성상 한 번 도입하면 쉽게 변경하기가 어렵기 때문에 신중하게 선택해야 합니다.</p>
+<p>이 글에서는 빅쿼리, 스노우 플레이크, 레드 시프트의 장단점을 비교하고 어떤 데이터 웨어하우스를 선택해야 하는지에 대해 알아보겠습니다.</p>
+</section>
+<section id="빅쿼리-vs-스노우-플레이크-vs-레드-시프트-비교" class="level2">
+<h2 class="anchored" data-anchor-id="빅쿼리-vs-스노우-플레이크-vs-레드-시프트-비교">2. 빅쿼리 vs 스노우 플레이크 vs 레드 시프트 비교</h2>
+<section id="공통점" class="level3">
+<h3 class="anchored" data-anchor-id="공통점">(1) 공통점</h3>
+<ul>
+<li><strong>클라우드 기반</strong>: 물리적 서버가 없는 클라우드 기반 서비스입니다.</li>
+<li><strong>SQL 쿼리</strong>: SQL 쿼리를 사용하여 데이터를 처리합니다.</li>
+<li><strong>데이터 분석</strong>: 데이터 분석, BI, 머신러닝 등 다양한 분석 작업을 수행할 수 있습니다.</li>
+</ul>
+<p>기능적으로는 3개 서비스가 큰 차이는 없습니다. 하지만 다음 차이점을 고려할 수 있습니다.</p>
+</section>
+<section id="차이점" class="level3">
+<h3 class="anchored" data-anchor-id="차이점">(2) 차이점</h3>
+<table class="table">
+<colgroup>
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 24%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>구분</th>
+<th>구글 빅쿼리</th>
+<th>스노우 플레이크</th>
+<th>아마존 레드 시프트</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>비용</td>
+<td>최초 1TB/월 저장 비용 무료로 데이터 용량이 크지 않다면 가장 저렴</td>
+<td>데이터 저장 고정비 $23-$50/월 + 분석-계산 비용 별도 청구</td>
+<td>저장과 분석 비용이 가장 비쌈</td>
+</tr>
+<tr class="even">
+<td>데이터 형식</td>
+<td>JSON, XML 기반 반정형 데이터 및 SQL 정형 데이터 지원</td>
+<td>JSON, XML, Avro, Parquet등 가장 다양한 형식 지원</td>
+<td>PostgreSQL 기반의 관계성 데이터를 JSON으로 지원</td>
+</tr>
+<tr class="odd">
+<td>아키텍처</td>
+<td>데이터 저장과 계산을 분리하여 빠른 속도 제공</td>
+<td>데이터 저장과 계산이 분리되고, 병렬 계산이 가능해서 속도가 빠름</td>
+<td>데이터 양이 많은 경우 처리 속ㄷ도가 느려질 수 있음</td>
+</tr>
+<tr class="even">
+<td>확장성</td>
+<td>사용하는 만큼 자동으로 용량 조절하여 편리함</td>
+<td></td>
+<td>데이터가 매우 많을 때는 가장 적합하다는 평</td>
+</tr>
+<tr class="odd">
+<td>사용 환경</td>
+<td>구글 클라우드 내에서만 사용 가능</td>
+<td>다양한 환경에서 사용 가능</td>
+<td>아마존 웹서비스 내에서만 사용 가능</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="빅쿼리" class="level3">
+<h3 class="anchored" data-anchor-id="빅쿼리">(1) 빅쿼리</h3>
+<p>빅쿼리는 구글이 개발한 클라우드 기반 데이터 웨어하우스 서비스로, <strong>서버리스 아키텍처</strong>를 사용하여 데이터를 저장하고 처리합니다. 빅쿼리는 <strong>SQL 쿼리</strong>를 사용하여 데이터를 처리하며, <strong>데이터 분석, BI, 머신러닝</strong> 등 다양한 분석 작업을 수행할 수 있습니다.</p>
+<p>빅쿼리의 장점은 다음과 같습니다.</p>
+<ul>
+<li><p><strong>빠른 속도</strong>: 빅쿼리는 대용량 데이터를 빠르게 처리할 수 있습니다.</p></li>
+<li><p><strong>서버리스 아키텍처</strong>: 서버 관리가 필요 없어서 운영이 간편합니다.</p></li>
+<li><p><strong>저렴한 비용</strong>: 사용한 만큼만 비용을 지불하면 되기 때문에 비용 효율적입니다.</p></li>
+</ul>
+<p>빅쿼리의 단점은 다음과 같습니다.</p>
+<ul>
+<li><p><strong>지역 변경 불가</strong>: 지역으로 구분된 데이터 저장소를 변경할 수 없습니다. 변경하려면 새로운 프로젝트를 생성해서 복사하거나 이전할 수 있지만, 별도 비용이 발생합니다.</p></li>
+<li><p><strong>지역 간 통합 분석 불가</strong>: 2개 이상 지역에 저장된 데이터셋을 통합하여 분석할 수 없습니다. 1개 지역으로 데이터롤 모아서 분석을 해야 합니다.</p></li>
+</ul>
+</section>
+<section id="스노우-플레이크" class="level3">
+<h3 class="anchored" data-anchor-id="스노우-플레이크">(2) 스노우 플레이크</h3>
+<p>스노우 플레이크는 클라우드 기반 데이터 웨어하우스 서비스로, <strong>가상 데이터 웨어하우스</strong>를 사용하여 데이터를 저장하고 처리합니다. 스노우 플레이크는 <strong>SQL 쿼리</strong>를 사용하여 데이터를 처리하며, <strong>데이터 분석, BI, 머신러닝</strong> 등 다양한 분석 작업을 수행할 수 있습니다.</p>
+<p>스노우 플레이크의 장점은 다음과 같습니다.</p>
+<ul>
+<li><p><strong>빠른 속도</strong>: 스노우 플레이크는 대용량 데이터를 빠르게 처리할 수 있습니다.</p></li>
+<li><p><strong>유연한 아키텍처</strong>: 가상 데이터 웨어하우스를 사용하여 데이터를 저장하고 처리하기 때문에 유연하게 확장할 수 있습니다.</p></li>
+<li><p><strong>데이터 보안</strong>: 데이터 보안에 대한 우려가 적습니다.</p></li>
+</ul>
+<p>스노우 플레이크의 단점은 다음과 같습니다.</p>
+<ul>
+<li><p><strong>비용</strong>: 빅쿼리에 비해 비용이 높을 수 있습니다.</p></li>
+<li><p><strong>복잡한 쿼리</strong>: 복잡한 쿼리를 작성하기 어려울 수 있습니다.</p></li>
+<li><p><strong>데이터 이관</strong>: 데이터를 스노우 플레이크로 이관하는 과정이 복잡할 수 있습니다.</p>
+<h3 id="레드-시프트" class="anchored">(3) 레드 시프트</h3></li>
+</ul>
+<p>레드 시프트는 아마존이 개발한 클라우드 기반 데이터 웨어하우스 서비스로, <strong>분산 데이터베이스</strong>를 사용하여 데이터를 저장하고 처리합니다. 레드 시프트는 <strong>SQL 쿼리</strong>를 사용하여 데이터를 처리하며, <strong>데이터 분석, BI, 머신러닝</strong> 등 다양한 분석 작업을 수행할 수 있습니다.</p>
+<p>레드 시프트의 장점은 다음과 같습니다.</p>
+<ul>
+<li><strong>확장성:</strong> 대용량 데이터를 가장 효율적으로 다룰 수 있습니다.</li>
+</ul>
+<p>레드 시프트의 단점은 다음과 같습니다.</p>
+<ul>
+<li><p><strong>비용</strong>: 세 시스템 중 가장 비쌉니다.</p></li>
+<li><p><strong>복잡한 쿼리</strong>: 복잡한 쿼리를 작성하기 어려울 수 있습니다.</p></li>
+<li><p><strong>지원 형태 부족</strong>: JSON 형태만 지원해서 다양한 데이터베이스 연동이 어려울 수 있습니다.</p></li>
+</ul>
+</section>
+</section>
+<section id="고려할-사항은" class="level2">
+<h2 class="anchored" data-anchor-id="고려할-사항은">3. 고려할 사항은?</h2>
+<p>데이터웨어하우스 클라우드 시스템을 선택하는 <strong>기업/기관의 상황과 여건이 다르기 때문에</strong> 어떤 시스템 하나가 유일한 정답이 될 수는 없습니다. 그럼에도 불구하고 데이터웨어하우스를 새로 구축하거나 이전하려고 한다면 다음 사항을 고려하면 좋겠습니다.</p>
+<ul>
+<li><p>어떤 종류의 데이터를 저장할 것인가?</p></li>
+<li><p>기존 데이터 시스템과 어떻게 결합/병합 할까?</p></li>
+<li><p>얼마나 유동적으로 데이터 사이즈가 변화할까?</p></li>
+<li><p>누가 관리할 것인가?</p></li>
+<li><p>얼마나 빠른 속도 데이터 처리가 필요할까?</p></li>
+<li><p>비용이 얼마나 들까?</p></li>
+</ul>
+</section>
+<section id="결론" class="level2">
+<h2 class="anchored" data-anchor-id="결론">4. 결론</h2>
+<p>최근 가장 가파르게 확장되고 있는 서비스는 스노우플레이크 입니다. 다른 클라우드 서버와 연결이 가능하고, 다양한 분석 툴과 연계도 쉬운 편입니다. 또 구글, 아마존 생태계 내에 갇혀 있지 않아도 되는 것도 장점 입니다.</p>
+<p>반대로 만약 회사에서 주로 쓰는 서비스가 구글 애널리틱스 (GA4)라면, 굳이 다른 서비스를 연결하기 보다는 빅쿼리를 쓰는 게 쉽고 빠릅니다. 그래서 데이터 웨어하우스를 고를 때는 <strong>조직의 데이터 활용 기능과 시스템, 확장 가능성 등을 고려하여 신중히 결정하시기 바랍니다.</strong></p>
+
+
+</section>
+
+ ]]></description>
+  <category>bigquery</category>
+  <category>sql</category>
+  <category>data warehouse</category>
+  <guid>https://seheeopark.rbind.io/posts/which-data-warehouse-to-choose/</guid>
+  <pubDate>Fri, 22 Mar 2024 15:00:00 GMT</pubDate>
+  <media:content url="https://seheeopark.rbind.io/posts/which-data-warehouse-to-choose/data_warehouse.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>RStudio에서 Copilot 쓰기</title>
   <dc:creator>박세희 </dc:creator>
