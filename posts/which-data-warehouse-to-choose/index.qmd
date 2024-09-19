@@ -3,7 +3,7 @@ title: "클라우드 데이터 웨어하우스 어떤 기준으로 고를까?"
 description: "빅쿼리 vs 스노우플레이크 vs 레드시프트 장단점을 알아 보자"
 date: "2024-3-23"
 categories: [bigquery, sql, data warehouse]
-image: "data_warehouse.png"
+image: data_warehouse.png
 ---
 
 ## 1. 데이터 웨어하우스 란?

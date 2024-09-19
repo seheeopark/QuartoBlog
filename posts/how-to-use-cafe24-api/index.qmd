@@ -3,7 +3,7 @@ title: "비개발자도 쉽게 카페24 API 인증 토큰 발급 받는 방법"
 description: "카페24의 다소 까다롭고 복잡한 인증 코드 발급, 차근차근 따라하면 비개발자도 카페24 API 활용 가능합니다."
 date: "2024-9-19"
 categories: [cafe24, api, python, tokens]
-image: "cafe24_api_thumbnail.png"
+image: cafe24_api_thumbnail.png
 ---
 
 ## 0. 데이터 분석가가 왜 API까지 쓰게 되었나
