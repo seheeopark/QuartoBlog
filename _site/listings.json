@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/how-to-use-cafe24-api/index.html",
       "/posts/which-data-warehouse-to-choose/index.html",
       "/posts/copilot-in-rstudio/index.html",
       "/posts/quarto-blog-seo-setting/index.html",
