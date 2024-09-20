@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2024-09-19">
 <meta name="description" content="카페24의 다소 까다롭고 복잡한 인증 코드 발급, 차근차근 따라하면 비개발자도 카페24 API 활용 가능합니다.">
 
-<title>Mindful Analytics - 비개발자도 쉽게 카페24 API 인증 토큰 발급 받는 방법</title>
+<title>비개발자도 쉽게 카페24 API 인증 토큰 발급 받는 방법 – Mindful Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,7 +36,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -126,10 +126,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Mindful Analytics - 비개발자도 쉽게 카페24 API 인증 토큰 발급 받는 방법">
+<meta property="og:title" content="비개발자도 쉽게 카페24 API 인증 토큰 발급 받는 방법 – Mindful Analytics">
 <meta property="og:description" content="카페24의 다소 까다롭고 복잡한 인증 코드 발급, 차근차근 따라하면 비개발자도 카페24 API 활용 가능합니다.">
 <meta property="og:image" content="https://seheeopark.rbind.io/posts/how-to-use-cafe24-api/cafe24_api_thumbnail.png">
 <meta property="og:site_name" content="Mindful Analytics">
+<meta property="og:image:height" content="720">
+<meta property="og:image:width" content="1280">
 </head>
 
 <body class="nav-fixed">
@@ -144,7 +146,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -178,7 +180,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -265,6 +267,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
+<div class="{writing}">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="cafe24_api_thumbnail.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="카페24 API 인증 코드 발급 받기"><img src="cafe24_api_thumbnail.png" class="img-fluid figure-img" alt="카페24 API 인증 코드 발급 받기"></a></p>
+<figcaption>카페24 API 인증 코드 발급 받기</figcaption>
+</figure>
+</div>
+</div>
 <section id="데이터-분석가가-왜-api까지-쓰게-되었나" class="level2">
 <h2 class="anchored" data-anchor-id="데이터-분석가가-왜-api까지-쓰게-되었나">0. 데이터 분석가가 왜 API까지 쓰게 되었나</h2>
 <p>저는 카페24를 활용하는 이커머스 데이터 분석을 종종 접하고 있는 데이터 분석가 입니다. 대부분 이커머스 사실 고객사 대표님들이 가장 궁금해 하시는 건 다음 2가지는</p>
@@ -331,7 +341,7 @@ Note
 <p>버튼 클릭 시 다음과 같은 팝업이 뜨는데, 우리는 API 토큰만 발급받을 것이기 때문에 <code>Web</code>을 선택하고, 관리 상품명에는 <code>쇼핑몰이름</code>을 입력 합니다. 관리자아이디로 이미 샘플 쇼핑몰이 생성되기 때문에, 카페24 쇼핑몰 이름은 쇼핑몰 관리자아이디와 동일하게 입력하면 관리가 편할 것 입니다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="register_app.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="카페24 API App 등록 화면 예시"><img src="register_app.png" class="img-fluid figure-img" alt="카페24 API App 등록 화면 예시"></a></p>
+<p><a href="register_app.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="카페24 API App 등록 화면 예시"><img src="register_app.png" class="img-fluid figure-img" alt="카페24 API App 등록 화면 예시"></a></p>
 <figcaption>카페24 API App 등록 화면 예시</figcaption>
 </figure>
 </div>
@@ -349,7 +359,7 @@ Note
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="app_info.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="카페24 API 발급용 기본정보 입력 예시"><img src="app_info.png" class="img-fluid figure-img" alt="카페24 API 발급용 기본정보 입력 예시"></a></p>
+<p><a href="app_info.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="카페24 API 발급용 기본정보 입력 예시"><img src="app_info.png" class="img-fluid figure-img" alt="카페24 API 발급용 기본정보 입력 예시"></a></p>
 <figcaption>카페24 API 발급용 기본정보 입력 예시</figcaption>
 </figure>
 </div>
@@ -360,7 +370,7 @@ Note
 <p>나머지 부분은 별도로 설정하지 않습니다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="api_info.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="quarto-lightbox-gallery-3" title="카페24 API 정보 입력 예시"><img src="api_info.png" class="img-fluid figure-img" alt="카페24 API 정보 입력 예시"></a></p>
+<p><a href="api_info.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="카페24 API 정보 입력 예시"><img src="api_info.png" class="img-fluid figure-img" alt="카페24 API 정보 입력 예시"></a></p>
 <figcaption>카페24 API 정보 입력 예시</figcaption>
 </figure>
 </div>
@@ -370,7 +380,7 @@ Note
 <p>위 설정을 마치고 인증 정보에서 <code>Client ID</code>와 <code>Client Secret</code>을 복사하여 따로 메모해 둡니다. 이 정보는 곧 발급 받을 인증 코드를 받을 때 사용합니다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="client_tokens.png" class="lightbox" data-glightbox="description: .lightbox-desc-4" data-gallery="quarto-lightbox-gallery-4" title="카페24 API 인증정보 저장하기"><img src="client_tokens.png" class="img-fluid figure-img" alt="카페24 API 인증정보 저장하기"></a></p>
+<p><a href="client_tokens.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="카페24 API 인증정보 저장하기"><img src="client_tokens.png" class="img-fluid figure-img" alt="카페24 API 인증정보 저장하기"></a></p>
 <figcaption>카페24 API 인증정보 저장하기</figcaption>
 </figure>
 </div>
@@ -433,7 +443,7 @@ Note
 <p>코드를 실행하면 각자의 쇼핑몰 정보로 완성된 URL이 터미널에 출력됩니다. 웹주소 전체를 복사하여 웹브라우저에 붙여넣기 한 후 접속합니다.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="generated_url.png" class="lightbox" data-glightbox="description: .lightbox-desc-5" data-gallery="quarto-lightbox-gallery-5" title="파이썬으로 생성한 접속코드 발급용 URL 예시"><img src="generated_url.png" class="img-fluid figure-img" alt="파이썬으로 생성한 접속코드 발급용 URL 예시"></a></p>
+<p><a href="generated_url.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="파이썬으로 생성한 접속코드 발급용 URL 예시"><img src="generated_url.png" class="img-fluid figure-img" alt="파이썬으로 생성한 접속코드 발급용 URL 예시"></a></p>
 <figcaption>파이썬으로 생성한 접속코드 발급용 URL 예시</figcaption>
 </figure>
 </div>
@@ -442,13 +452,6 @@ Note
 <p>인증 코드는 1분간 유효 하기 때문에코드 발급 후 재빠르게 다음 단계를 실행해서 재활용 가능한 토큰으로 교환해야 합니다. 토큰 교환 방법은 다음 글에서 자세하게 소개해 들겠습니다.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">카페24 API App 등록 화면 예시</span>
-<span class="glightbox-desc lightbox-desc-2">카페24 API 발급용 기본정보 입력 예시</span>
-<span class="glightbox-desc lightbox-desc-3">카페24 API 정보 입력 예시</span>
-<span class="glightbox-desc lightbox-desc-4">카페24 API 인증정보 저장하기</span>
-<span class="glightbox-desc lightbox-desc-5">파이썬으로 생성한 접속코드 발급용 URL 예시</span>
-</div>
 </section>
 </section>
 </section>
@@ -633,18 +636,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -676,7 +668,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/seheeopark\.rbind\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -711,7 +743,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -1002,30 +1038,37 @@ Made with <a href="https://quarto.org/docs/websites/website-blog.html">Quarto</a
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"descPosition":"bottom","selector":".lightbox","openEffect":"zoom"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 

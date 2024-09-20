@@ -6,6 +6,10 @@ categories: [cafe24, api, python, tokens]
 image: cafe24_api_thumbnail.png
 ---
 
+::: {writing}
+![카페24 API 인증 코드 발급 받기](cafe24_api_thumbnail.png)
+:::
+
 ## 0. 데이터 분석가가 왜 API까지 쓰게 되었나
 
 저는 카페24를 활용하는 이커머스 데이터 분석을 종종 접하고 있는 데이터 분석가 입니다. 대부분 이커머스 사실 고객사 대표님들이 가장 궁금해 하시는 건 다음 2가지는
