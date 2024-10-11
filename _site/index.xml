@@ -10,7 +10,90 @@
 <atom:link href="https://seheeopark.rbind.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>사려 깊은 데이터 분석 이야기</description>
 <generator>quarto-1.5.57</generator>
-<lastBuildDate>Wed, 18 Sep 2024 15:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 11 Oct 2024 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>맥에서 윈도우로 파일 전송 시 한글 파일명 깨짐 해결</title>
+  <dc:creator>박세희 </dc:creator>
+  <link>https://seheeopark.rbind.io/posts/mac-to-window-hangul-nf-solved/</link>
+  <description><![CDATA[ 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3T26F7J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+<section id="맥-한글-깨짐-현상" class="level2">
+<h2 class="anchored" data-anchor-id="맥-한글-깨짐-현상">맥 한글 깨짐 현상</h2>
+<p>맥은 한글을 분리형(NFD)으로 저장하여 표기하기 때문 입니다. 윈도우에서는 한글을 조합형(NFC)으로 저장하여 표기 합니다. 이 저장방식 차이로 인해 맥에서 한글로 파일명을 저장하여 발송하면 윈도우에서는 자음과 모음이 모두 분리되는 <code>자소분리</code> 현상이 나타납니다.</p>
+<p>거래처가 윈도우를 쓰는 경우가 많기 때문에 맥 사용자는 잊지말고 NFC로 한글 파일명을 변환하여 발송하는 것이 좋습니다.</p>
+</section>
+<section id="nfc-변환기-반디네이머" class="level2">
+<h2 class="anchored" data-anchor-id="nfc-변환기-반디네이머">NFC 변환기: 반디네이머</h2>
+<p>비개발자에게 가장 안정적이고 편리한 툴은 애플 공식 앱스토어에 등록된 <code>반디네이머</code> 입니다. 무료이고 변경 전, 후를 볼 수 있어서 안심하고 사용할 수 있습니다.</p>
+<p><a href="https://kr.bandisoft.com/bandinamer/">반디네이머 다운로드 하기</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="BandiNamer.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="앱스토어에서 반디네이머를 검색"><img src="https://seheeopark.rbind.io/posts/mac-to-window-hangul-nf-solved/BandiNamer.png" class="img-fluid figure-img" alt="앱스토어에서 반디네이머를 검색"></a></p>
+<figcaption>앱스토어에서 반디네이머를 검색</figcaption>
+</figure>
+</div>
+<section id="반디네이머로-파일명-변환-결과" class="level3">
+<h3 class="anchored" data-anchor-id="반디네이머로-파일명-변환-결과">반디네이머로 파일명 변환 결과</h3>
+<p>변경할 파일 선택 후 “변경하기” 버튼 한 번만 클릭하면 됩니다. 복잡한 코드 하나 쓸 필요도 없어요.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/1O7ro-tr5KU" title="반디네이머 사용법" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+</section>
+<section id="맥-메일앱-사용시-추가-설정" class="level2">
+<h2 class="anchored" data-anchor-id="맥-메일앱-사용시-추가-설정">맥 메일앱 사용시 추가 설정</h2>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+메일앱 사용 시 주의사항
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>맥OS에서 제공하는 메일앱은 파일 첨부 시 자동으로 NFD 분리형 문자열로 재설정 합니다. 따라서 반디네이머로 NFC로 파일명을 저장해도 맥OS 메일앱을 사용해서 파일을 전송하는 순간 윈도우 사용자는 또! 깨진 한글로 파일을 받게 됩니다.</p>
+</div>
+</div>
+<section id="메일앱-기본-언어를-utf-8으로-바꾸기" class="level3">
+<h3 class="anchored" data-anchor-id="메일앱-기본-언어를-utf-8으로-바꾸기">메일앱 기본 언어를 “UTF-8”으로 바꾸기</h3>
+<ul>
+<li><p>시스템 설정 &gt; Privacy &amp; Security &gt; Full Disk Access 에서 터미널 옵션을 활성화 해 줍니다.</p></li>
+<li><p>터미널 프로그램을 엽니다.</p></li>
+<li><p>다음 코드를 복사, 붙여넣기 하고 엔터를 눌러 실행합니다.<sup>1</sup></p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1">defaults write com.apple.mail NSPreferredMailCharset <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"UTF-8"</span></span></code></pre></div>
+</div>
+<ul>
+<li>메일 앱을 종료했다가 다시 엽니다.</li>
+</ul>
+<p>[보너스]</p>
+<p>메일앱 기본 언어를 UTF-8로 바꾸면 윈도우에서 발송한 첨부 파일 한글명도 깨지지 않습니다.</p>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>애플 커뮤니티 글(<a href="https://discussionskorea.apple.com/thread/253987461?sortBy=rank" class="uri">https://discussionskorea.apple.com/thread/253987461?sortBy=rank</a>)을 참고 했습니다.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>macOS</category>
+  <guid>https://seheeopark.rbind.io/posts/mac-to-window-hangul-nf-solved/</guid>
+  <pubDate>Fri, 11 Oct 2024 05:00:00 GMT</pubDate>
+  <media:content url="https://seheeopark.rbind.io/posts/mac-to-window-hangul-nf-solved/thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>비개발자도 쉽게 카페24 API 인증 토큰 발급 받는 방법</title>
   <dc:creator>박세희 </dc:creator>
@@ -299,7 +382,7 @@ font-style: inherit;">print</span>(url)</span></code></pre></div>
   <category>python</category>
   <category>tokens</category>
   <guid>https://seheeopark.rbind.io/posts/how-to-use-cafe24-api/</guid>
-  <pubDate>Wed, 18 Sep 2024 15:00:00 GMT</pubDate>
+  <pubDate>Thu, 19 Sep 2024 05:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/how-to-use-cafe24-api/cafe24_api_thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -454,7 +537,7 @@ font-style: inherit;">print</span>(url)</span></code></pre></div>
   <category>sql</category>
   <category>data warehouse</category>
   <guid>https://seheeopark.rbind.io/posts/which-data-warehouse-to-choose/</guid>
-  <pubDate>Fri, 22 Mar 2024 15:00:00 GMT</pubDate>
+  <pubDate>Sat, 23 Mar 2024 05:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/which-data-warehouse-to-choose/data_warehouse.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -719,7 +802,7 @@ font-style: inherit;">"Histogram of mtcars mpg"</span>)</span></code></pre></div
   <category>copilot</category>
   <category>github</category>
   <guid>https://seheeopark.rbind.io/posts/copilot-in-rstudio/</guid>
-  <pubDate>Wed, 20 Mar 2024 15:00:00 GMT</pubDate>
+  <pubDate>Thu, 21 Mar 2024 05:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/copilot-in-rstudio/copilot-in-rstudio.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -937,7 +1020,7 @@ font-style: inherit;">---</span></span></code></pre></div>
   <category>R</category>
   <category>seo</category>
   <guid>https://seheeopark.rbind.io/posts/quarto-blog-seo-setting/</guid>
-  <pubDate>Wed, 13 Mar 2024 15:00:00 GMT</pubDate>
+  <pubDate>Thu, 14 Mar 2024 05:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/quarto-blog-seo-setting/seo-thumbnail.webp" medium="image" type="image/webp"/>
 </item>
 <item>
@@ -1265,7 +1348,7 @@ font-style: inherit;">dbDisconnect</span>(con)</span></code></pre></div>
   <category>dbplyr</category>
   <category>sql</category>
   <guid>https://seheeopark.rbind.io/posts/bigquery-dbplyr/</guid>
-  <pubDate>Wed, 13 Mar 2024 15:00:00 GMT</pubDate>
+  <pubDate>Thu, 14 Mar 2024 05:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/bigquery-dbplyr/dbplyr_thumbnail.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -1544,7 +1627,7 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
   <category>sql</category>
   <category>R</category>
   <guid>https://seheeopark.rbind.io/posts/bigquery-r/</guid>
-  <pubDate>Sun, 25 Feb 2024 15:00:00 GMT</pubDate>
+  <pubDate>Mon, 26 Feb 2024 05:00:00 GMT</pubDate>
   <media:content url="https://seheeopark.rbind.io/posts/bigquery-r/bigquery-r-thumbnail.webp" medium="image" type="image/webp"/>
 </item>
 <item>
@@ -1690,7 +1773,7 @@ font-style: inherit;">print</span>(natality_df)</span></code></pre></div>
   <category>quarto</category>
   <category>netlify</category>
   <guid>https://seheeopark.rbind.io/posts/netlify-deployment/</guid>
-  <pubDate>Fri, 23 Feb 2024 15:00:00 GMT</pubDate>
+  <pubDate>Sat, 24 Feb 2024 05:00:00 GMT</pubDate>
 </item>
 <item>
   <title>R Quarto로 만드는 블로그</title>
@@ -1908,7 +1991,7 @@ font-style: inherit;">use_github</span>() </span></code></pre></div>
   <category>quarto</category>
   <category>R</category>
   <guid>https://seheeopark.rbind.io/posts/quarto-blog/</guid>
-  <pubDate>Thu, 22 Feb 2024 15:00:00 GMT</pubDate>
+  <pubDate>Fri, 23 Feb 2024 05:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>

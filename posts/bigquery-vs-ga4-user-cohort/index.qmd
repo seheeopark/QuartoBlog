@@ -1,0 +1,13 @@
+---
+title: "정확한 코호트 분석, GA4 보다는 빅쿼리로"
+description: "GA4에서 제공하는 코호트 분석은 제한적이다. 빅쿼리를 이용해 더 정확한 코호트 분석을 해보자."
+date: "2024-9-20"
+categories: [ga4, bigquery, cohort analysis]
+draft: true
+---
+
+::: {writing}
+![코호트 분석]()
+:::
+
+## 0. 코호트 분석이란?

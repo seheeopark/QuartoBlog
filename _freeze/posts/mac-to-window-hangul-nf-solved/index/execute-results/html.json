@@ -1,0 +1,19 @@
+{
+  "hash": "680fc7ba963ec88f28de10166a665cb8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"맥에서 윈도우로 파일 전송 시 한글 파일명 깨짐 해결\"\ndescription: \"맥에서 한글 파일명을 조합형으로 변경한 뒤 메일앱 사용 시 기본 폰트를 UTF-8로 정의하면 한글 파일명이 깨지지 않습니다. \"\ndate: \"2024-10-11\"\ncategories: [macOS]\nimage: thumbnail.png\n---\n\n\n\n## 맥 한글 깨짐 현상\n\n맥은 한글을 분리형(NFD)으로 저장하여 표기하기 때문 입니다. 윈도우에서는 한글을 조합형(NFC)으로 저장하여 표기 합니다. 이 저장방식 차이로 인해 맥에서 한글로 파일명을 저장하여 발송하면 윈도우에서는 자음과 모음이 모두 분리되는 `자소분리` 현상이 나타납니다.\n\n거래처가 윈도우를 쓰는 경우가 많기 때문에 맥 사용자는 잊지말고 NFC로 한글 파일명을 변환하여 발송하는 것이 좋습니다.\n\n## NFC 변환기: 반디네이머\n\n비개발자에게 가장 안정적이고 편리한 툴은 애플 공식 앱스토어에 등록된 `반디네이머` 입니다. 무료이고 변경 전, 후를 볼 수 있어서 안심하고 사용할 수 있습니다.\n\n[반디네이머 다운로드 하기](https://kr.bandisoft.com/bandinamer/)\n\n![앱스토어에서 반디네이머를 검색](BandiNamer.png)\n\n### 반디네이머로 파일명 변환 결과\n\n변경할 파일 선택 후 \"변경하기\" 버튼 한 번만 클릭하면 됩니다. 복잡한 코드 하나 쓸 필요도 없어요.\n\n\n\n{{< video https://youtu.be/1O7ro-tr5KU title = \"반디네이머 사용법\" >}}\n\n\n\n\n## 맥 메일앱 사용시 추가 설정\n\n::: callout-warning\n## 메일앱 사용 시 주의사항\n\n맥OS에서 제공하는 메일앱은 파일 첨부 시 자동으로 NFD 분리형 문자열로 재설정 합니다. 따라서 반디네이머로 NFC로 파일명을 저장해도 맥OS 메일앱을 사용해서 파일을 전송하는 순간 윈도우 사용자는 또! 깨진 한글로 파일을 받게 됩니다.\n:::\n\n### 메일앱 기본 언어를 \"UTF-8\"으로 바꾸기\n\n-   시스템 설정 \\> Privacy & Security \\> Full Disk Access 에서 터미널 옵션을 활성화 해 줍니다.\n\n-   터미널 프로그램을 엽니다.\n\n-   다음 코드를 복사, 붙여넣기 하고 엔터를 눌러 실행합니다.[^1]\n\n[^1]: 애플 커뮤니티 글(<https://discussionskorea.apple.com/thread/253987461?sortBy=rank>)을 참고 했습니다.\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndefaults write com.apple.mail NSPreferredMailCharset \"UTF-8\"\n```\n:::\n\n\n\n-   메일 앱을 종료했다가 다시 엽니다.\n\n\\[보너스\\]\n\n메일앱 기본 언어를 UTF-8로 바꾸면 윈도우에서 발송한 첨부 파일 한글명도 깨지지 않습니다.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<link href=\"../../site_libs/pagedtable-1.1/css/pagedtable.css\" rel=\"stylesheet\" />\n<script src=\"../../site_libs/pagedtable-1.1/js/pagedtable.js\"></script>\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
